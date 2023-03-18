@@ -1,44 +1,38 @@
-class cfgPatches
-{
-	class OPTRE_Weapons_Splaser
-	{
-		author="Mesa";
+class cfgPatches {
+	class MM_M6GGNR {
+		authors[]={
+			"Mesa",
+			"Saint"
+		};
 		units[]={};
-		weapons[]=
-		{
-			"OPTRE_M6GNGNR"
+		weapons[]={
+			"MM_M6GGNR"
 		};
-		magazines[]=
-		{
-			"OPTRE_SpLaser_Battery2"
+		magazines[]={
+			"MM_SpLaser_Battery"
 		};
-		ammo[]=
-		{
-			"OPTRE_SpLaserAmmo2"
+		ammo[]={
+			"MM_SpLaserAmmo"
 		};
 		requiredversion=0.1;
-		requiredAddons[]=
-		{
-			"OPTRE_Core"
+		requiredAddons[]={
+			"OPTRE_Core",
+			"OPTRE_Weapons"
 		};
 	};
 };
 
 class cfgFunctions
 {};
-class cfgWeaponCursors
-{
+class cfgWeaponCursors {
 	class throw;
-	class OPTRE_Splaser2: throw
-	{
-		texture="\OPTRE_Weapons\Splaser\data\ui\splaser_reticle.paa";
+	class MM_Splaser: throw 	{
+		texture="\MM_M6GGNR\Splaser\data\ui\splaser_reticle.paa";
 	};
 };
-class cfgAmmo
-{
+class cfgAmmo {
 	class OPTRE_M41_Rocket_HEAT;
-	class OPTRE_SpLaserAmmo2: OPTRE_M41_Rocket_HEAT
-	{
+	class MM_SpLaserAmmo: OPTRE_M41_Rocket_HEAT {
 		scope=2;
 		scopeArsenal=2;
 		caliber=1;
@@ -49,26 +43,22 @@ class cfgAmmo
 		fuseDistance=1;
 		typicalSpeed=1500;
 		maxSpeed=1500;
-		model="OPTRE_Weapons\Weapons\data\spartan_laser.p3d";
+		model="MM_M6GGNR\Weapons\data\spartan_laser.p3d";
 	};
 };
-class cfgMagazines
-{
+class cfgMagazines {
 	class CA_Magazine;
-	class OPTRE_SpLaser_Battery2: CA_Magazine
-	{
+	class MM_SpLaser_Battery: CA_Magazine {
 		scope=2;
 		scopeArsenal=2;
 		displayName="M6 Laser Battery";
 		displayNameShort="Laser";
-		ammo="OPTRE_SpLaserAmmo2";
+		ammo="MM_SpLaserAmmo";
 		model="\OPTRE_Weapons\Ammo\boxAmmo.p3d";
-		hiddenSelections[]=
-		{
+		hiddenSelections[]={
 			"camo"
 		};
-		hiddenSelectionsTexturesp[]=
-		{
+		hiddenSelectionsTexturesp[]={
 			"OPTRE_Weapons\Ammo\data\SpartanLaser_Ammo_CO.paa"
 		};
 		initSpeed=1500;
@@ -78,38 +68,32 @@ class cfgMagazines
 };
 class Mode_SemiAuto;
 class Mode_Burst;
-class cfgWeapons
-{
+class cfgWeapons {
 	class OPTRE_UnguidedLauncher_Base;
-	class OPTRE_M6GNGNR: OPTRE_UnguidedLauncher_Base
-	{
-		author="Article 2 Studios";
-		dlc="Operation: TREBUCHET";
+	class MM_M6GGNR: OPTRE_UnguidedLauncher_Base {
+		author="Mesa";
 		scope=2;
 		scopeArsenal=2;
-		displayname="M6V GN/GNR";
+		displayname="[MM] M6V G/GNR";
 		descriptionshort="M6V Grindel/Galilean Non-Linear Rifle";
-		magazines[]=
-		{
-			"OPTRE_SpLaser_Battery2"
+		magazines[]={
+			"MM_SpLaser_Battery"
 		};
 		magazineWell[]={};
-		picture="\OPTRE_splaser\data\ui\splaser.paa";
-		model="\OPTRE_Splaser\data\spartan_laser.p3d";
-		handAnim[]=
-		{
+		picture="\MM_M6GGNR\data\ui\splaser.paa";
+		model="\MM_M6GGNR\data\spartan_laser.p3d";
+		handAnim[]={
 			"OFP2_ManSkeleton",
 			"\OPTRE_Weapons\Splaser\data\spartan_laser.rtm"
 		};
-		modelOptics[]=
-		{
-			"\OPTRE_Weapons\splaser\data\ui\M6V_Optic_2x.p3d",
-			"\OPTRE_Weapons\splaser\data\ui\M6V_Optic_4x.p3d",
-			"\OPTRE_Weapons\splaser\data\ui\M6V_Optic_10x.p3d"
+		modelOptics[]={
+			"\MM_M6GGNR\splaser\data\ui\M6V_Optic_2x.p3d",
+			"\MM_M6GGNR\splaser\data\ui\M6V_Optic_4x.p3d",
+			"\MM_M6GGNR\splaser\data\ui\M6V_Optic_10x.p3d"
 		};
-		baseWeapon="OPTRE_M6GNGNR";
-		cursor="OPTRE_Splaser2";
-		pictureWire="\OPTRE_Weapons\Splaser\data\ui\splaserwire.paa";
+		baseWeapon="OPTRE_M6GGNR";
+		cursor="MM_Splaser";
+		pictureWire="\MM_M6GGNR\Splaser\data\ui\splaserwire.paa";
 		ODST_1="OPTRE_ODST_HUD_AmmoCount_AR";
 		Glasses="OPTRE_ODST_HUD_AmmoCount_AR";
 		Eye="OPTRE_ODST_HUD_AmmoCount_AR";
@@ -118,29 +102,23 @@ class cfgWeapons
 		ace_overpressure_angle=0;
 		ace_overpressure_range=0;
 		ace_overpressure_damage=0;
-		hiddenSelections[]=
-		{
+		hiddenSelections[]={
 			"camo1",
 			"camo2"
 		};
-		hiddenSelectionsTextures[]=
-		{
-			"OPTRE_Weapons\splaser\data\Spartan_Laser_Camo1_co.paa",
-			"OPTRE_Weapons\splaser\data\Spartan_Laser_Camo2_co.paa"
+		hiddenSelectionsTextures[]={
+			"MM_M6GGNR\splaser\data\Spartan_Laser_Camo1_co.paa",
+			"MM_M6GGNR\splaser\data\Spartan_Laser_Camo2_co.paa"
 		};
-		class WeaponSlotsInfo
-		{
+		class WeaponSlotsInfo {
 			mass=150;
 		};
 		class GunParticles {};
-		class OpticsModes
-		{
-			class StepScope
-			{
+		class OpticsModes {
+			class StepScope {
 				opticsID=1;
 				useModelOptics=1;
-				opticsPPEffects[]=
-				{
+				opticsPPEffects[]={
 					"OpticsCHAbera1",
 					"OpticsBlur1"
 				};
@@ -152,8 +130,7 @@ class cfgWeapons
 				distanceZoomMax=300;
 				memoryPointCamera="eye";
 				cameraDir="look";
-				visionMode[]=
-				{
+				visionMode[]={
 					"Normal",
 					"NVG",
 					"Ti"
@@ -164,28 +141,22 @@ class cfgWeapons
 				discreteInitIndex=0;
 			};
 		};
-		modes[]=
-		{
+		modes[]={
 			"Single"
 		};
 		recoil="Empty";
-		class Single: Mode_SemiAuto
-		{
-			sounds[]=
-			{
+		class Single: Mode_SemiAuto {
+			sounds[]= {
 				"StandardSound"
 			};
-			class StandardSound
-			{
-				begin1[]=
-				{
+			class StandardSound {
+				begin1[]={
 					"OPTRE_Weapons\Vehicle\data\sounds\Laser_1.wss",
 					2.5,
 					1,
 					1500
 				};
-				soundBegin[]=
-				{
+				soundBegin[]={
 					"begin1",
 					1
 				};
@@ -207,14 +178,12 @@ class cfgWeapons
 		weaponLockSystem="2 + 16";
 		cmImmunity=0.25;
 		lockAcquire=1;
-		lockingTargetSound[]=
-		{
+		lockingTargetSound[]={
 			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\locking_Titan",
 			0.31622776,
 			1
 		};
-		lockedTargetSound[]=
-		{
+		lockedTargetSound[]={
 			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\locked_Titan",
 			0.31622776,
 			2.5
