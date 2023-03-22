@@ -29,7 +29,7 @@ params [
 //
 // These constants are related to the setup of the mod(s) and the naming scheme of items
 private	_armorTextureRoot    = "82nd_Armor\data\armors";
-private	_backpackTextureRoot = "82nd_Backpacks\data";
+private	_backpackTextureRoot = "82nd_Radio_Packs\data";
 private	unitTexturePrefixes   = "82nd";
 
 // ###############################
@@ -239,23 +239,23 @@ if !(_currentBackpack == "") then {
 if !(_currentHelmet == "") then {
 	// Split and reconstruct the class of the helmet
 	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
+	private _helmetPrefix = _helmetTempArray # 0;
 	private _helmetType      = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
 	private _helmetSubtype   = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
 	
-	// Reformat helmet as the base version for compatibility check
-	private _helmetBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _helmetType, _helmetSubtype];
-	
-	if ((compatibleHelmets find _helmetBLK != -1) || (compatibleHelmets find (format ["%1_dp", _helmetBLK]) != -1)) then {
-		// Ex: 82nd_HelmetType_Role_Camo
-		private _newHelmet = format ["%1_%2_%3_%4", unitTexturePrefixes, _helmetType, _helmetSubtype, _camoType];
+	if (_helmetPrefix find unitTexturePrefixes != -1) then {
+		// Reformat helmet as the base version for compatibility check
+		private _helmetBLK = format ["%1_%2_%3_BLK", _helmetPrefix, _helmetType, _helmetSubtype];
+		
+		if ((compatibleHelmets find _helmetBLK != -1) || (compatibleHelmets find (format ["%1_dp", _helmetBLK]) != -1)) then {
+			// Ex: 82nd_HelmetType_Role_Camo
+			private _newHelmet = format ["%1_%2_%3_%4", unitTexturePrefixes, _helmetType, _helmetSubtype, _camoType];
 
-		removeHeadgear _unit;
-		_unit addHeadgear _newHelmet;
+			removeHeadgear _unit;
+			_unit addHeadgear _newHelmet;
+		};
 	};
 };
-	if (compatibleHelmets find _helmetSubtype) then {
-		
-	};
 
 // ###############
 // ## Facewear ##

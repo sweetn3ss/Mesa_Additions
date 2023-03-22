@@ -3,7 +3,7 @@
 	"EDITBOX",
 	"Compatible Units",
 	["Mesa's Settings","Camo Options"],
-	[],
+	["82nd","69th"],
 	1
 ] call CBA_fnc_addSetting;
 
@@ -12,7 +12,7 @@
 	"EDITBOX",
 	"Compatible Vests",
 	["Mesa's Settings","Camo Options"],
-	[],
+	["82nd_Radio_Packs\data","69th_Bags\data"],
 	1
 ] call CBA_fnc_addSetting;
 
