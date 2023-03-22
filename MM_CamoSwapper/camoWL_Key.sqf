@@ -1,4 +1,15 @@
 [
+"camoYes",
+"CHECKBOX",
+"Camo Swapper Toggle",
+["Mesa's Settings","Camo Toggle"],
+1,
+1,
+{},
+nil
+] call CBA_fnc_addSetting;
+
+[
 	"unitTexturePrefixes",
 	"EDITBOX",
 	"Compatible Units",

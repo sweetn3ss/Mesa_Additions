@@ -238,21 +238,24 @@ if !(_currentBackpack == "") then {
 // All 'duplicate' helmets of non-default camouflage are marked with 'scope = 1;' in their classes
 if !(_currentHelmet == "") then {
 	// Split and reconstruct the class of the helmet
-	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
-	private _helmetPrefix = _helmetTempArray # 0;
-	private _helmetType      = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
-	private _helmetSubtype   = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
-	
-	if (_helmetPrefix find unitTexturePrefixes != -1) then {
-		// Reformat helmet as the base version for compatibility check
-		private _helmetBLK = format ["%1_%2_%3_BLK", _helmetPrefix, _helmetType, _helmetSubtype];
+	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
+	if (_checkedHelmet isEqualTo true) then {
+		private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
+		private _helmetPrefix = _helmetTempArray # 0;
+		private _helmetType      = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
+		private _helmetSubtype   = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
 		
-		if ((compatibleHelmets find _helmetBLK != -1) || (compatibleHelmets find (format ["%1_dp", _helmetBLK]) != -1)) then {
-			// Ex: 82nd_HelmetType_Role_Camo
-			private _newHelmet = format ["%1_%2_%3_%4", unitTexturePrefixes, _helmetType, _helmetSubtype, _camoType];
+		if (_helmetPrefix find unitTexturePrefixes != -1) then {
+			// Reformat helmet as the base version for compatibility check
+			private _helmetBLK = format ["%1_%2_%3_BLK", _helmetPrefix, _helmetType, _helmetSubtype];
+			
+			if ((compatibleHelmets find _helmetBLK != -1) || (compatibleHelmets find (format ["%1_dp", _helmetBLK]) != -1)) then {
+				// Ex: 82nd_HelmetType_Role_Camo
+				private _newHelmet = format ["%1_%2_%3_%4", _helmetPrefix, _helmetType, _helmetSubtype, _camoType];
 
-			removeHeadgear _unit;
-			_unit addHeadgear _newHelmet;
+				removeHeadgear _unit;
+				_unit addHeadgear _newHelmet;
+			};
 		};
 	};
 };
