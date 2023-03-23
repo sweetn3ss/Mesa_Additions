@@ -266,26 +266,28 @@ if !(_currentHelmet == "") then {
 //
 // Facewear items are swapped as items.
 if !(_currentFW == "") then {
-	
-	private _fwTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
-	private _fwType = _fwTempArray # 1;
-	private _fwSubType = _fwTempArray # 2;
+	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
+	if (_checkedFW isEqualTo true) then {
+		private _fwTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
+		private _fwType = _fwTempArray # 1;
+		private _fwSubType = _fwTempArray # 2;
+			
+		private _fwBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _fwType, _fwSubType];
+		if (compatibleFW find _fwBLK != -1) then {
 		
-	private _fwBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _fwType, _fwSubType];
-	if (compatibleFW find _fwBLK != -1) then {
-	
-		if (_fwType == "Bala") then {
-			if (_fwSubType == "G" || _fwSubType == "NoG" || _fwSubType == "BeastG" || _fwSubType == "BeastNoG") then {
-				private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
-				removeGoggles _unit;
-				_unit addGoggles _fwTypeName;
+			if (_fwType == "Bala") then {
+				if (_fwSubType == "G" || _fwSubType == "NoG" || _fwSubType == "BeastG" || _fwSubType == "BeastNoG") then {
+					private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
+					removeGoggles _unit;
+					_unit addGoggles _fwTypeName;
+				};
 			};
-		};
-		if (_fwType == "Scarf") then {
-			if (_fwSubType == "SmartDown" || _fwSubType == "SmartUp") then {
-				private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
-				removeGoggles _unit;
-				_unit addGoggles _fwTypeName;
+			if (_fwType == "Scarf") then {
+				if (_fwSubType == "SmartDown" || _fwSubType == "SmartUp") then {
+					private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
+					removeGoggles _unit;
+					_unit addGoggles _fwTypeName;
+				};
 			};
 		};
 	};
@@ -297,26 +299,29 @@ if !(_currentFW == "") then {
 //
 // HMDs are swapped as items.
 if !(_currentHMD == "") then {
+	private _checkedHMD = (configFile >> "CfgGlasses" >> _currentHMD >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
+	if (_checkedHMD isEqualTo true) then {
 	
-	private _hmdTempArray = [_currentHMD, "_"] call BIS_fnc_splitString;
-	private _hmdType = _hmdTempArray # 1;
-	private _hmdSubType = _hmdTempArray # 2;
+		private _hmdTempArray = [_currentHMD, "_"] call BIS_fnc_splitString;
+		private _hmdType = _hmdTempArray # 1;
+		private _hmdSubType = _hmdTempArray # 2;
+			
+		private _hmdBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _hmdType, _hmdSubType];
+		if (compatibleHMDs find _hmdBLK != -1) then {
 		
-	private _hmdBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _hmdType, _hmdSubType];
-	if (compatibleHMDs find _hmdBLK != -1) then {
-	
-		if (_hmdType == "CatHMD") then {
-			if (_hmdSubType == "Base") then {
-				private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
-				_unit removeWeapon _currentHMD;
-				_unit addWeapon _hmdTypeName;
+			if (_hmdType == "CatHMD") then {
+				if (_hmdSubType == "Base") then {
+					private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
+					_unit removeWeapon _currentHMD;
+					_unit addWeapon _hmdTypeName;
+				};
 			};
-		};
-		if (_hmdType == "ScarfHMD") then {
-			if (_hmdSubType == "SmartDown" || _hmdSubType == "SmartUp") then {
-				private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
-				_unit removeWeapon _currentHMD;
-				_unit addWeapon _hmdTypeName;
+			if (_hmdType == "ScarfHMD") then {
+				if (_hmdSubType == "SmartDown" || _hmdSubType == "SmartUp") then {
+					private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
+					_unit removeWeapon _currentHMD;
+					_unit addWeapon _hmdTypeName;
+				};
 			};
 		};
 	};

@@ -2282,6 +2282,7 @@ class CfgWeapons
 			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
 			"V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"
 		};
+		isCamoCompatible=1;
 	};
 	class 82nd_CH252D_Helmet_dp: 82nd_CH252D_Helmet_Base_dp
 	{
