@@ -2282,7 +2282,6 @@ class CfgWeapons
 			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
 			"V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"
 		};
-		isCamoCompatible=1;
 	};
 	class 82nd_CH252D_Helmet_dp: 82nd_CH252D_Helmet_Base_dp
 	{
@@ -3684,6 +3683,12 @@ class CfgWeapons
 		{
 			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
 			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+		};
+		camoTypes[]={
+			"BLK",
+			"DES",
+			"SNO",
+			"WDL"
 		};
 	};
 	class 82nd_ECH252_Rifleman_BLK_dp: 82nd_ECH252_Helmet_Base_dp

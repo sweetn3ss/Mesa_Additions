@@ -19,9 +19,9 @@ nil
 ] call CBA_fnc_addSetting;
 
 [
-	"compatibleVests",
+	"backpackTexturePaths",
 	"EDITBOX",
-	"Compatible Vests",
+	"Backpack Texture Paths",
 	["Mesa's Settings","Camo Options"],
 	["82nd_Radio_Packs\data","69th_Bags\data"],
 	1

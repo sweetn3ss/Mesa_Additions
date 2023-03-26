@@ -236,27 +236,18 @@ if !(_currentBackpack == "") then {
 // Helmets are swapped as items.
 // This makes hud management easier and is compatible with the way visor opaqueness works.
 // All 'duplicate' helmets of non-default camouflage are marked with 'scope = 1;' in their classes
-if !(_currentHelmet == "") then {
-	// Split and reconstruct the class of the helmet
-	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
-	if (_checkedHelmet isEqualTo true) then {
-		private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
-		private _helmetPrefix = _helmetTempArray # 0;
-		private _helmetType      = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
-		private _helmetSubtype   = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
+if !(_currentHelmet = "") then {
+	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData; // grab array of compatible camo types from config
+	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString; // deconstruct classname into base parts
+	private _helmetPrefix = _helmetTempArray # 0; // grab unit helmet prefix
+	private _helmetType = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
+	private _helmetSubtype = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
+	private _helmetCamoTypes = _checkedHelmet; // save duplicate of _checkedHelmet array for redundancy
+	if (_helmetCamoTypes find _camoType != -1 && _helmetPrefix find UnitTexturePrefixes != -1) then { // verify that the unit prefix and desired texture are valid
+		private _newHelmet = format ["%1_%2_%3_%4", _helmetPrefix, _helmetType, _helmetSubtype, _camoType]; // reconstruct classname to be used later
 		
-		if (_helmetPrefix find unitTexturePrefixes != -1) then {
-			// Reformat helmet as the base version for compatibility check
-			private _helmetBLK = format ["%1_%2_%3_BLK", _helmetPrefix, _helmetType, _helmetSubtype];
-			
-			if ((compatibleHelmets find _helmetBLK != -1) || (compatibleHelmets find (format ["%1_dp", _helmetBLK]) != -1)) then {
-				// Ex: 82nd_HelmetType_Role_Camo
-				private _newHelmet = format ["%1_%2_%3_%4", _helmetPrefix, _helmetType, _helmetSubtype, _camoType];
-
-				removeHeadgear _unit;
-				_unit addHeadgear _newHelmet;
-			};
-		};
+		removeHeadgear _unit; // remove worn helmet on player
+		_unit addHeadgear _newHelmet; // use _newHelmet to replace old one
 	};
 };
 
@@ -266,7 +257,7 @@ if !(_currentHelmet == "") then {
 //
 // Facewear items are swapped as items.
 if !(_currentFW == "") then {
-	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
+	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >> "camoTypes") call BIS_fnc_getCfgDataBool;
 	if (_checkedFW isEqualTo true) then {
 		private _fwTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
 		private _fwType = _fwTempArray # 1;
@@ -299,7 +290,7 @@ if !(_currentFW == "") then {
 //
 // HMDs are swapped as items.
 if !(_currentHMD == "") then {
-	private _checkedHMD = (configFile >> "CfgGlasses" >> _currentHMD >>"isCamoCompatible") call BIS_fnc_getCfgDataBool;
+	private _checkedHMD = (configFile >> "CfgGlasses" >> _currentHMD >> "camoTypes") call BIS_fnc_getCfgDataBool;
 	if (_checkedHMD isEqualTo true) then {
 	
 		private _hmdTempArray = [_currentHMD, "_"] call BIS_fnc_splitString;
