@@ -237,17 +237,16 @@ if !(_currentBackpack == "") then {
 // This makes hud management easier and is compatible with the way visor opaqueness works.
 // All 'duplicate' helmets of non-default camouflage are marked with 'scope = 1;' in their classes
 if !(_currentHelmet = "") then {
-	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData; // grab array of compatible camo types from config
-	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString; // deconstruct classname into base parts
-	private _helmetPrefix = _helmetTempArray # 0; // grab unit helmet prefix
-	private _helmetType = _helmetTempArray # 1; // Ex: 'ECH252', 'CH252', etc.
-	private _helmetSubtype = _helmetTempArray # 2; // Ex: 'Rifleman', 'Corpsman', etc.
-	private _helmetCamoTypes = _checkedHelmet; // save duplicate of _checkedHelmet array for redundancy
-	if (_helmetCamoTypes find _camoType != -1 && _helmetPrefix find UnitTexturePrefixes != -1) then { // verify that the unit prefix and desired texture are valid
-		private _newHelmet = format ["%1_%2_%3_%4", _helmetPrefix, _helmetType, _helmetSubtype, _camoType]; // reconstruct classname to be used later
+	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData;
+	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
+	private _helmetPrefix = _helmetTempArray # 0;
+	private _helmetCamoRef = _helmetTempArray # (count _helmetTempArray -1);
+	private _helmetCamoTypes = _checkedHelmet;
+	if (_helmetCamoTypes find _camoType != -1 && _helmetPrefix find UnitTexturePrefixes != -1) then {
+		private _newHelmet = format ["%1_%2_%3_%4", _helmetPrefix, _helmetType, _helmetSubtype, _camoType];
 		
-		removeHeadgear _unit; // remove worn helmet on player
-		_unit addHeadgear _newHelmet; // use _newHelmet to replace old one
+		removeHeadgear _unit;
+		_unit addHeadgear _newHelmet;
 	};
 };
 
@@ -257,7 +256,7 @@ if !(_currentHelmet = "") then {
 //
 // Facewear items are swapped as items.
 if !(_currentFW == "") then {
-	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >> "camoTypes") call BIS_fnc_getCfgDataBool;
+	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >> "camoTypes") call BIS_fnc_getCfgData;
 	if (_checkedFW isEqualTo true) then {
 		private _fwTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
 		private _fwType = _fwTempArray # 1;
