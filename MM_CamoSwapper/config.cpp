@@ -3270,6 +3270,13 @@ class CfgWeapons
 			mass=40;
 			uniformClass="82nd_BDU_Morph_UNI";
 		};
+		camoTypes[]=
+		{
+			"BLK",
+			"DES",
+			"SNO",
+			"WDL"
+		};
 	};
 	class 82nd_BDU_Morph_ROLLED: OPTRE_UNSC_Army_Uniform_OLI
 	{
@@ -3283,6 +3290,13 @@ class CfgWeapons
 			mass=40;
 			uniformClass="82nd_BDUR_Morph_UNI";
 		};
+		camoTypes[]=
+		{
+			"BLK",
+			"DES",
+			"SNO",
+			"WDL"
+		};
 	};
 	class 82nd_BDU_Morph_Short: OPTRE_UNSC_Army_Uniform_OLI
 	{
@@ -3295,6 +3309,13 @@ class CfgWeapons
 			containerClass="Supply200";
 			mass=40;
 			uniformClass="82nd_BDUS_Morph_UNI";
+		};
+		camoTypes[]=
+		{
+			"BLK",
+			"DES",
+			"SNO",
+			"WDL"
 		};
 	};
 	class 82nd_CH252_Rifleman_BLK: OPTRE_UNSC_CH252_Helmet_Base
