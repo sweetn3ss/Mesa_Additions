@@ -39,13 +39,13 @@ class CfgWeapons
 		displayName="-";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_CO",
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_V_CO"
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_CO",
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_V_CO"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D.rvmat",
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D_V.rvmat"
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D.rvmat",
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D_V.rvmat"
 		};
 		CBRN_protection="1 + 2";
 		class ItemInfo: HeadgearItem
@@ -60,13 +60,13 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_CO",
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_V_CO"
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_CO",
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_V_CO"
 			};
 			hiddenSelectionsMaterials[]=
 			{
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D.rvmat",
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D_V.rvmat"
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D.rvmat",
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D_V.rvmat"
 			};
 			class HitpointsProtectionInfo
 			{
@@ -106,12 +106,12 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_CO",
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D_CLR_V_CA"
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_CO",
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D_CLR_V_CA"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\V_CH252D.rvmat",
+			"MM_CamoSwapper\data\armors\Helmets\V_CH252D.rvmat",
 			""
 		};
 		CBRN_protection=1;
@@ -127,12 +127,12 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D_DEF_CO",
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D_CLR_V_CA"
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D_DEF_CO",
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D_CLR_V_CA"
 			};
 			hiddenSelectionsMaterials[]=
 			{
-				"82nd_Armor_New\data\armors\Helmets\V_CH252D.rvmat",
+				"MM_CamoSwapper\data\armors\Helmets\V_CH252D.rvmat",
 				""
 			};
 			class HitpointsProtectionInfo
@@ -877,9 +877,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_BLK.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_BLK.paa"
 		};
 	};
 	class 82nd_M52A_Corpsman_SNO: 82nd_M52A_Corpsman_BLK
@@ -890,9 +890,9 @@ class CfgWeapons
 		displayName="[MM] M52A Corpsman (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_SNO.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_SNO.paa"
 		};
 	};
 	class 82nd_M52A_Corpsman_DES: 82nd_M52A_Corpsman_BLK
@@ -903,9 +903,9 @@ class CfgWeapons
 		displayName="[MM] M52A Corpsman (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_DES.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_DES.paa"
 		};
 	};
 	class 82nd_M52A_Corpsman_WDL: 82nd_M52A_Corpsman_BLK
@@ -916,9 +916,9 @@ class CfgWeapons
 		displayName="[MM] M52A Corpsman (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_WDL.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_WDL.paa"
 		};
 	};
 	class 82nd_M52A_MG_BLK: 82nd_M52A_Armor_Base
@@ -1015,9 +1015,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_MG_DES: 82nd_M52A_MG_BLK
@@ -1028,9 +1028,9 @@ class CfgWeapons
 		displayName="[MM] M52A MG (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_MG_SNO: 82nd_M52A_MG_BLK
@@ -1041,9 +1041,9 @@ class CfgWeapons
 		displayName="[MM] M52A MG (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_MG_WDL: 82nd_M52A_MG_BLK
@@ -1054,9 +1054,9 @@ class CfgWeapons
 		displayName="[MM] M52A MG (Woodland)";
 	hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_Grenadier_BLK: 82nd_M52A_Armor_Base
@@ -1151,9 +1151,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_Grenadier_DES: 82nd_M52A_Grenadier_BLK
@@ -1164,9 +1164,9 @@ class CfgWeapons
 		displayName="[MM] M52A Grenadier (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_Grenadier_SNO: 82nd_M52A_Grenadier_BLK
@@ -1177,9 +1177,9 @@ class CfgWeapons
 		displayName="[MM] M52A Grenadier (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_Grenadier_WDL: 82nd_M52A_Grenadier_BLK
@@ -1190,9 +1190,9 @@ class CfgWeapons
 		displayName="[MM] M52A Grenadier (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_Marksman_BLK: 82nd_M52A_Armor_Base
@@ -1301,9 +1301,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK",
 			""
 		};
 	};
@@ -1315,9 +1315,9 @@ class CfgWeapons
 		displayName="[MM] M52A Marksman (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES",
 			""
 		};
 	};
@@ -1329,9 +1329,9 @@ class CfgWeapons
 		displayName="[MM] M52A Marksman (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO",
 			""
 		};
 	};
@@ -1343,9 +1343,9 @@ class CfgWeapons
 		displayName="[MM] M52A Marksman (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL",
 			""
 		};
 	};
@@ -1441,9 +1441,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_Breacher_DES: 82nd_M52A_Breacher_BLK
@@ -1454,9 +1454,9 @@ class CfgWeapons
 		displayName="[MM] M52A Breacher (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_Breacher_SNO: 82nd_M52A_Breacher_BLK
@@ -1467,9 +1467,9 @@ class CfgWeapons
 		displayName="[MM] M52A Breacher (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_Breacher_WDL: 82nd_M52A_Breacher_BLK
@@ -1480,9 +1480,9 @@ class CfgWeapons
 		displayName="[MM] M52A Breacher (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_TeamLead_BLK: 82nd_M52A_Armor_Base
@@ -1577,9 +1577,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_TeamLead_DES: 82nd_M52A_TeamLead_BLK
@@ -1590,9 +1590,9 @@ class CfgWeapons
 		displayName="[MM] M52A Team Lead (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_TeamLead_SNO: 82nd_M52A_TeamLead_BLK
@@ -1603,9 +1603,9 @@ class CfgWeapons
 		displayName="[MM] M52A Team Lead (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_TeamLead_WDL: 82nd_M52A_TeamLead_BLK
@@ -1616,9 +1616,9 @@ class CfgWeapons
 		displayName="[MM] M52A Team Lead (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_A_BLK: 82nd_M52A_Armor_Base
@@ -1745,9 +1745,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_A_DES: 82nd_M52A_A_BLK
@@ -1758,9 +1758,9 @@ class CfgWeapons
 		displayName="[MM] M52A (A)(Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_A_SNO: 82nd_M52A_A_BLK
@@ -1771,9 +1771,9 @@ class CfgWeapons
 		displayName="[MM] M52A (A)(Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_A_WDL: 82nd_M52A_A_BLK
@@ -1784,9 +1784,9 @@ class CfgWeapons
 		displayName="[MM] M52A (A)(Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_B_BLK: 82nd_M52A_Armor_Base
@@ -1913,9 +1913,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_B_DES: 82nd_M52A_B_BLK
@@ -1926,9 +1926,9 @@ class CfgWeapons
 		displayName="[MM] M52A (B)(Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_B_SNO: 82nd_M52A_B_BLK
@@ -1939,9 +1939,9 @@ class CfgWeapons
 		displayName="[MM] M52A (B)(Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_B_WDL: 82nd_M52A_B_BLK
@@ -1952,9 +1952,9 @@ class CfgWeapons
 		displayName="[MM] M52A (B)(Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_C_BLK: 82nd_M52A_Armor_Base
@@ -2081,9 +2081,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_C_DES: 82nd_M52A_C_BLK
@@ -2094,9 +2094,9 @@ class CfgWeapons
 		displayName="[MM] M52A (C)(Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_C_SNO: 82nd_M52A_C_BLK
@@ -2107,9 +2107,9 @@ class CfgWeapons
 		displayName="[MM] M52A (C)(Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_C_WDL: 82nd_M52A_C_BLK
@@ -2120,9 +2120,9 @@ class CfgWeapons
 		displayName="[MM] M52A (C)(Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_M52A_Crew_BLK: 82nd_M52A_Armor_Base
@@ -2227,9 +2227,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK"
 		};
 	};
 	class 82nd_M52A_Crew_DES: 82nd_M52A_Crew_BLK
@@ -2240,9 +2240,9 @@ class CfgWeapons
 		displayName="[MM] M52A Crew (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES"
 		};
 	};
 	class 82nd_M52A_Crew_SNO: 82nd_M52A_Crew_BLK
@@ -2253,9 +2253,9 @@ class CfgWeapons
 		displayName="[MM] M52A Crew (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO"
 		};
 	};
 	class 82nd_M52A_Crew_WDL: 82nd_M52A_Crew_BLK
@@ -2266,9 +2266,9 @@ class CfgWeapons
 		displayName="[MM] M52A Crew (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL"
 		};
 	};
 	class 82nd_CH252D_Helmet: 82nd_CH252D_Helmet_Base
@@ -2279,7 +2279,7 @@ class CfgWeapons
 		displayName="[MM] CH252D (ODST)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
 			"V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"
 		};
 	};
@@ -2291,8 +2291,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (ODST DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_CH252D_Helmet_SR: 82nd_CH252D_Helmet_Base
@@ -2303,8 +2303,8 @@ class CfgWeapons
 		displayName="[MM] CH252D Senior (ODST)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_SR.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\ODST_Helmet_Visor_black_co.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_SR.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\ODST_Helmet_Visor_black_co.paa"
 		};
 	};
 	class 82nd_CH252D_Helmet_SR_dp: 82nd_CH252D_Helmet_Base_dp
@@ -2315,8 +2315,8 @@ class CfgWeapons
 		displayName="[MM] CH252D Senior (ODST DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_SR.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_SR.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_M52D_Vest_SR: 82nd_M52A_Armor_Base
@@ -2406,11 +2406,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_ODST.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_ODST.paa",
 			"",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_ODST_Vest_SR.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_ODST_Vest_SR.paa"
 		};
 	};
 	class 82nd_M52D_Rifleman: 82nd_M52A_Armor_Base
@@ -2506,11 +2506,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_ODST.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_ODST.paa",
 			"",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_ODST_Vest_BLK.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_ODST_Vest_BLK.paa"
 		};
 	};
 	class 82nd_CH252D_Helmet_TRN: 82nd_CH252D_Helmet_Base
@@ -2521,7 +2521,7 @@ class CfgWeapons
 		displayName="[MM] CH252D Training (ODST)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_TRN.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_TRN.paa",
 			"V_FZ_Armor\Data\Helmets\V_CH252D_GLD_V_CO"
 		};
 	};
@@ -2533,8 +2533,8 @@ class CfgWeapons
 		displayName="[MM] CH252D Training (ODST DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_CH252D_Helmet_TRN.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_CH252D_Helmet_TRN.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_M52D_Rifleman_TRN: 82nd_M52A_Armor_Base
@@ -2638,11 +2638,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_VestArmor_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_Rifleman_Leg_BLK.paa",
 			"",
-			"82nd_Armor_New\data\armors\ODST\generic\82nd_M52_ODST_Vest_TRN.paa"
+			"MM_CamoSwapper\data\armors\ODST\generic\82nd_M52_ODST_Vest_TRN.paa"
 		};
 	};
 	class 82nd_M52A_Rifleman_BLK: 82nd_M52A_Armor_Base
@@ -2769,9 +2769,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa"
 		};
 	};
 	class 82nd_M52A_Rifleman_DES: 82nd_M52A_Rifleman_BLK
@@ -2782,9 +2782,9 @@ class CfgWeapons
 		displayName="[MM] M52A (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES.paa"
 		};
 	};
 	class 82nd_M52A_Rifleman_SNO: 82nd_M52A_Rifleman_BLK
@@ -2795,9 +2795,9 @@ class CfgWeapons
 		displayName="[MM] M52A (Winter)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO.paa"
 		};
 	};
 	class 82nd_M52A_Rifleman_WDL: 82nd_M52A_Rifleman_BLK
@@ -2808,9 +2808,9 @@ class CfgWeapons
 		displayName="[MM] M52A (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL.paa"
 		};
 	};
 	class 82nd_M52A_Aviation_BLK: 82nd_M52A_Armor_Base
@@ -2932,11 +2932,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_Aviation_BLK.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_Aviation_BLK.paa"
 		};
 	};
 	class 82nd_M52A_Aviation_DES: 82nd_M52A_Aviation_BLK
@@ -2947,11 +2947,11 @@ class CfgWeapons
 		displayName="[MM] M52A Aviation (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_Aviation_DES.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_Aviation_DES.paa"
 		};
 	};
 	class 82nd_M52A_Aviation_SNO: 82nd_M52A_Aviation_BLK
@@ -2962,11 +2962,11 @@ class CfgWeapons
 		displayName="[MM] M52A Aviation (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_Aviation_SNO.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_Aviation_SNO.paa"
 		};
 	};
 	class 82nd_M52A_Aviation_WDL: 82nd_M52A_Aviation_BLK
@@ -2977,11 +2977,11 @@ class CfgWeapons
 		displayName="[MM] M52A Aviation (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_Aviation_WDL.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_Aviation_WDL.paa"
 		};
 	};
 	class 82nd_M52A_PJ_BLK: 82nd_M52A_Armor_Base
@@ -3097,11 +3097,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_BLK",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_BLK",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_BLK.paa",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_PJ_BLK.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_PJ_BLK.paa"
 		};
 	};
 	class 82nd_M52A_PJ_DES: 82nd_M52A_PJ_BLK
@@ -3112,11 +3112,11 @@ class CfgWeapons
 		displayName="[MM] M52A PJ (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_DES",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_DES",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_DES",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_PJ_DES.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_PJ_DES.paa"
 		};
 	};
 	class 82nd_M52A_PJ_SNO: 82nd_M52A_PJ_BLK
@@ -3127,11 +3127,11 @@ class CfgWeapons
 		displayName="[MM] M52A PJ (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_SNO",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_SNO",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_SNO",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_PJ_SNO.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_PJ_SNO.paa"
 		};
 	};
 	class 82nd_M52A_PJ_WDL: 82nd_M52A_PJ_BLK
@@ -3142,11 +3142,11 @@ class CfgWeapons
 		displayName="[MM] M52A PJ (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_WDL",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Corpsman_Leg_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_VestArmor_WDL",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Corpsman_Leg_WDL",
 			"",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52D_PJ_WDL.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52D_PJ_WDL.paa"
 		};
 	};
 	class 82nd_M52A_Rifleman_INST: 82nd_M52A_Armor_Base
@@ -3253,9 +3253,9 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_INST.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa"
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_INST.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa"
 		};
 	};
 	class 82nd_BDU_Morph_BASE: OPTRE_UNSC_Army_Uniform_OLI
@@ -3326,7 +3326,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_BLK.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_BLK.paa"
 		};
 	};
 	class 82nd_CH252_Rifleman_DES: 82nd_CH252_Rifleman_BLK
@@ -3337,7 +3337,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_DES.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_DES.paa"
 		};
 	};
 	class 82nd_CH252_Rifleman_SNO: 82nd_CH252_Rifleman_BLK
@@ -3348,7 +3348,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine (Winter)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_SNO.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_SNO.paa"
 		};
 	};
 	class 82nd_CH252_Rifleman_WDL: 82nd_CH252_Rifleman_BLK
@@ -3359,7 +3359,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_WDL.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_WDL.paa"
 		};
 	};
 	class 82nd_CH252_Mandible_BLK: 82nd_CH252_Mandible_Base
@@ -3370,7 +3370,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Mandible";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_BLK.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_BLK.paa"
 		};
 	};
 	class 82nd_CH252_Mandible_DES: 82nd_CH252_Mandible_BLK
@@ -3381,7 +3381,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Mandible (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_DES.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_DES.paa"
 		};
 	};
 	class 82nd_CH252_Mandible_SNO: 82nd_CH252_Mandible_BLK
@@ -3392,7 +3392,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Mandible (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_SNO.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_SNO.paa"
 		};
 	};
 	class 82nd_CH252_Mandible_WDL: 82nd_CH252_Mandible_BLK
@@ -3403,7 +3403,7 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Mandible (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\helmets\82nd_CH252_Rifleman_WDL.paa"
+			"MM_CamoSwapper\data\armors\helmets\82nd_CH252_Rifleman_WDL.paa"
 		};
 	};
 	class 82nd_CH252_Visor_BLK: 82nd_CH252_Visor_Base
@@ -3414,8 +3414,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa" 
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa" 
 		};
 	};
 	class 82nd_CH252_Visor_BLK_dp: 82nd_CH252_Visor_Base_dp
@@ -3426,8 +3426,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa" 
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa" 
 		};
 	};
 	class 82nd_CH252_Visor_DES: 82nd_CH252_Visor_BLK
@@ -3438,8 +3438,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_CH252_Visor_DES_dp: 82nd_CH252_Visor_BLK_dp
@@ -3450,8 +3450,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_CH252_Visor_SNO: 82nd_CH252_Visor_BLK
@@ -3462,8 +3462,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_CH252_Visor_SNO_dp: 82nd_CH252_Visor_BLK_dp
@@ -3474,8 +3474,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_CH252_Visor_WDL: 82nd_CH252_Visor_BLK
@@ -3486,8 +3486,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_CH252_Visor_WDL_dp: 82nd_CH252_Visor_BLK_dp
@@ -3498,200 +3498,8 @@ class CfgWeapons
 		displayName="[MM] CH252 Marine with Visor (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_BLK: 82nd_CH252A_Helmet_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		author="Mesa";
-		displayName="[MM] CH252A (Airborne)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_BLK_dp: 82nd_CH252A_Helmet_Base_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A (Airborne Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_ca.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_DES: 82nd_CH252A_Airborne_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Desert (Airborne)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_DES_dp: 82nd_CH252A_Airborne_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Desert (Airborne Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_ca.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_SNO: 82nd_CH252A_Airborne_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Winter (Airborne)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_SNO_dp: 82nd_CH252A_Airborne_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Winter (Airborne Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_ca.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_WDL: 82nd_CH252A_Airborne_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Woodland (Airborne)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Airborne_WDL_dp: 82nd_CH252A_Airborne_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] CH252A Woodland (Airborne Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Rifleman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_ca.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_BLK: 82nd_CH252A_Helmet_Base
-	{
-		scope=2;
-		scopeArsenal=2;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_BLK_dp: 82nd_CH252A_Helmet_Base_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_DES: 82nd_CH252A_Corpsman_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_DES_dp: 82nd_CH252A_Corpsman_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Desert Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_SNO: 82nd_CH252A_Corpsman_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Snow)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_SNO_dp: 82nd_CH252A_Corpsman_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Snow Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_WDL: 82nd_CH252A_Corpsman_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
-		};
-	};
-	class 82nd_CH252A_Corpsman_WDL_dp: 82nd_CH252A_Corpsman_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Saint & Max";
-		displayName="[MM] CH252A Corpsman (Woodland Depolarized)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252A_Corpsman_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets2\82nd_CH252A_Visor_Silver.paa"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Visor_ca.paa"
 		};
 	};
 	class 82nd_ECH252_Rifleman_BLK: 82nd_ECH252_Helmet_Base
@@ -3702,8 +3510,8 @@ class CfgWeapons
 		displayName="[MM] ECH252";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 		camoTypes[]={
 			"BLK",
@@ -3720,7 +3528,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_BLK.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3732,8 +3540,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Rifleman_DES_dp: 82nd_ECH252_Rifleman_BLK_dp
@@ -3744,7 +3552,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Desert Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_DES.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3756,8 +3564,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Winter)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Rifleman_SNO_dp: 82nd_ECH252_Rifleman_BLK_dp
@@ -3768,7 +3576,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Winter Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_SNO.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3780,8 +3588,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Rifleman_WDL_dp: 82nd_ECH252_Rifleman_BLK_dp
@@ -3792,7 +3600,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 (Woodland Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_CH252_Rifleman_WDL.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3804,8 +3612,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_BLK.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_BLK.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Corpsman_BLK_dp: 82nd_ECH252_Helmet_Base_dp
@@ -3816,7 +3624,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_BLK.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_BLK.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3828,8 +3636,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_DES.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_DES.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Corpsman_DES_dp: 82nd_ECH252_Corpsman_BLK_dp
@@ -3840,7 +3648,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Desert)(Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_DES.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_DES.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3852,8 +3660,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_SNO.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_SNO.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Corpsman_SNO_dp: 82nd_ECH252_Corpsman_BLK_dp
@@ -3864,7 +3672,7 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Snow)(Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_SNO.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_SNO.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
 		};
 	};
@@ -3876,8 +3684,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_WDL.paa",
-			"82nd_Armor_New\data\armors\helmets\82nd_ECH252_Visor_Silver"
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_WDL.paa",
+			"MM_CamoSwapper\data\armors\helmets\82nd_ECH252_Visor_Silver"
 		};
 	};
 	class 82nd_ECH252_Corpsman_WDL_dp: 82nd_ECH252_Corpsman_BLK_dp
@@ -3888,200 +3696,8 @@ class CfgWeapons
 		displayName="[MM] ECH252 Corpsman (Woodland)(Depolarized)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_ECH252_Corpsman_WDL.paa",
+			"MM_CamoSwapper\data\armors\Helmets\82nd_ECH252_Corpsman_WDL.paa",
 			"optre_unsc_units\army\data\helmet_visor_ca"
-		};
-	};
-	class 82nd_VX19_Pilot_BLK: 82nd_VX19_Pilot_BASE
-	{
-		scope=2;
-		scopeArsenal=2;
-		author="Mesa";
-		displayName="[MM] VX-19";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_BLK_dp: 82nd_VX19_Pilot_BASE_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_DES: 82nd_VX19_Pilot_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_DES_dp: 82nd_VX19_Pilot_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_SNO: 82nd_VX19_Pilot_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Snow)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_SNO_dp: 82nd_VX19_Pilot_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Snow)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_WDL: 82nd_VX19_Pilot_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_Pilot_WDL_dp: 82nd_VX19_Pilot_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_BASE_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Base_Visor.paa"
-		};
-	};
-	class 82nd_VX19_MED_BLK: 82nd_VX19_Pilot_BASE
-	{
-		scope=2;
-		scopeArsenal=2;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_BLK_dp: 82nd_VX19_Pilot_BASE_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_BLK.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_DES: 82nd_VX19_MED_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_DES_dp: 82nd_VX19_MED_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Desert)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_DES.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_SNO: 82nd_VX19_MED_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Snow)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_SNO_dp: 82nd_VX19_MED_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Snow)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_SNO.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_WDL: 82nd_VX19_MED_BLK
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
-		};
-	};
-	class 82nd_VX19_MED_WDL_dp: 82nd_VX19_MED_BLK_dp
-	{
-		scope=2;
-		scopeArsenal=1;
-		author="Mesa";
-		displayName="[MM] VX-19 PJ (Woodland)";
-		hiddenSelectionsTextures[]=
-		{
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_MED_WDL.paa",
-			"82nd_Armor_New\data\armors\Helmets\82nd_VX19_Visor_MED.paa"
 		};
 	};
 	class 82nd_ShemaghNVG_Red: OPTRE_NVG
@@ -4097,7 +3713,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4111,7 +3727,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 			};
 			mass=2;
 		};
@@ -4129,7 +3745,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4143,7 +3759,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 			};
 			mass=2;
 		};
@@ -4161,7 +3777,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4175,7 +3791,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 			};
 			mass=2;
 		};
@@ -4193,7 +3809,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4207,7 +3823,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 			};
 			mass=2;
 		};
@@ -4225,7 +3841,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4239,7 +3855,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 			};
 			mass=2;
 		};
@@ -4257,7 +3873,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4271,7 +3887,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 			};
 			mass=2;
 		};
@@ -4289,7 +3905,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4303,7 +3919,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 			};
 			mass=2;
 		};
@@ -4321,7 +3937,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4335,7 +3951,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 			};
 			mass=2;
 		};
@@ -4353,7 +3969,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4367,7 +3983,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 			};
 			mass=2;
 		};
@@ -4385,7 +4001,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4399,7 +4015,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 			};
 			mass=2;
 		};
@@ -4417,7 +4033,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4431,7 +4047,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 			};
 			mass=2;
 		};
@@ -4449,7 +4065,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4463,7 +4079,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 			};
 			mass=2;
 		};
@@ -4481,7 +4097,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4495,7 +4111,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 			};
 			mass=2;
 		};
@@ -4513,7 +4129,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4527,7 +4143,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 			};
 			mass=2;
 		};
@@ -4545,7 +4161,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4559,7 +4175,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 			};
 			mass=2;
 		};
@@ -4577,7 +4193,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4591,7 +4207,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 			};
 			mass=2;
 		};
@@ -4609,7 +4225,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4623,7 +4239,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 			};
 			mass=2;
 		};
@@ -4641,7 +4257,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 		};
 		class ItemInfo
 		{
@@ -4655,7 +4271,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+				"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 			};
 			mass=2;
 		};
@@ -4666,7 +4282,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		author="Mesa";
 		displayName="[MM] Cat Ears";
-		model="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
+		model="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4674,20 +4290,20 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_cat_BLK.paa",
-			"82nd_Armor_New\data\armors\fw\cat_ears_speakers.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_cat_BLK.paa",
+			"MM_CamoSwapper\data\armors\fw\cat_ears_speakers.paa"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\cat_ears.rvmat",
-			"82nd_Armor_New\data\armors\fw\cat_ears_speakers.rvmat"
+			"MM_CamoSwapper\data\armors\fw\cat_ears.rvmat",
+			"MM_CamoSwapper\data\armors\fw\cat_ears_speakers.rvmat"
 		};
 		class ItemInfo
 		{
 			type=616;
 			hmdType=0;
-			uniformModel="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
-			modelOff="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
+			uniformModel="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
+			modelOff="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -4695,13 +4311,13 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_cat_BLK.paa",
-				"82nd_Armor_New\data\armors\fw\cat_ears_speakers.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_cat_BLK.paa",
+				"MM_CamoSwapper\data\armors\fw\cat_ears_speakers.paa"
 			};
 			hiddenSelectionsMaterials[]=
 			{
-				"82nd_Armor_New\data\armors\fw\cat_ears.rvmat",
-				"82nd_Armor_New\data\armors\fw\cat_ears_speakers.rvmat"
+				"MM_CamoSwapper\data\armors\fw\cat_ears.rvmat",
+				"MM_CamoSwapper\data\armors\fw\cat_ears_speakers.rvmat"
 			};
 			mass=1;
 		};
@@ -4712,7 +4328,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		author="Mesa";
 		displayName="[MM] Nova Cat Ears";
-		model="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
+		model="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -4725,15 +4341,15 @@ class CfgWeapons
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\cat_ears.rvmat",
+			"MM_CamoSwapper\data\armors\fw\cat_ears.rvmat",
 			"82nd_Customs\data\Nova\cat_ears_speakers_nova.rvmat"
 		};
 		class ItemInfo
 		{
 			type=616;
 			hmdType=0;
-			uniformModel="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
-			modelOff="82nd_Armor_New\data\armors\fw\cat_ears.p3d";
+			uniformModel="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
+			modelOff="MM_CamoSwapper\data\armors\fw\cat_ears.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -4746,7 +4362,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsMaterials[]=
 			{
-				"82nd_Armor_New\data\armors\fw\cat_ears.rvmat",
+				"MM_CamoSwapper\data\armors\fw\cat_ears.rvmat",
 				"82nd_Customs\data\Nova\cat_ears_speakers_nova.rvmat"
 			};
 			mass=1;
@@ -4765,7 +4381,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 		};
 		class ItemInfo
 		{
@@ -4779,7 +4395,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 			};
 			mass=2;
 		};
@@ -4796,7 +4412,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 		};
 		class ItemInfo
 		{
@@ -4810,7 +4426,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 			};
 			mass=2;
 		};
@@ -4827,7 +4443,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 		};
 		class ItemInfo
 		{
@@ -4841,7 +4457,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 			};
 			mass=2;
 		};
@@ -4858,7 +4474,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 		};
 		class ItemInfo
 		{
@@ -4872,7 +4488,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 			};
 			mass=2;
 		};
@@ -4889,7 +4505,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 		};
 		class ItemInfo
 		{
@@ -4903,7 +4519,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 			};
 			mass=2;
 		};
@@ -4920,7 +4536,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 		};
 		class ItemInfo
 		{
@@ -4934,7 +4550,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 			};
 			mass=2;
 		};
@@ -4951,7 +4567,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 		};
 		class ItemInfo
 		{
@@ -4965,7 +4581,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 			};
 			mass=2;
 		};
@@ -4982,7 +4598,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 		};
 		class ItemInfo
 		{
@@ -4996,7 +4612,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+				"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 			};
 			mass=2;
 		};
@@ -5012,8 +4628,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
-			"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Visor_BLK"
+			"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
+			"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Visor_BLK"
 		};
 		hiddenSelectionsMaterials[]=
 		{
@@ -5031,8 +4647,8 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
-				"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Visor_BLK"
+				"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
+				"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Visor_BLK"
 			};
 			hiddenSelectionsMaterials[]=
 			{
@@ -5054,7 +4670,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
+			"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
 			"V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA"
 		};
 		hiddenSelectionsMaterials[]=
@@ -5073,7 +4689,7 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"82nd_Armor_New\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
+				"MM_CamoSwapper\data\armors\ONI\82nd_S1ONIR_Helm_BLK",
 				"V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA"
 			};
 			hiddenSelectionsMaterials[]=
@@ -5872,11 +5488,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_BLK.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_BLK.paa",
 			"",
-			"82nd_Armor_New\data\armors\temp\82nd_M52D_Rifleman_BLK.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_M52D_Rifleman_BLK.paa"
 		};
 	};
 	class 82nd_M52D_Stealth_DES: 82nd_M52D_Stealth_BLK
@@ -5887,11 +5503,11 @@ class CfgWeapons
 		displayName="[MM] M52D (Stealth DES)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_DES.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_DES.paa",
 			"",
-			"82nd_Armor_New\data\armors\temp\82nd_M52D_Rifleman_DES.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_M52D_Rifleman_DES.paa"
 		};
 	};
 	class 82nd_M52D_Stealth_SNO: 82nd_M52D_Stealth_BLK
@@ -5902,11 +5518,11 @@ class CfgWeapons
 		displayName="[MM] M52D (Stealth SNO)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_SNO.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_SNO.paa",
 			"",
-			"82nd_Armor_New\data\armors\temp\82nd_M52D_Rifleman_SNO.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_M52D_Rifleman_SNO.paa"
 		};
 	};
 	class 82nd_M52D_Stealth_WDL: 82nd_M52D_Stealth_BLK
@@ -5917,11 +5533,11 @@ class CfgWeapons
 		displayName="[MM] M52D (Stealth WDL)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL.paa",
-			"82nd_Armor_New\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestUnder_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_VestArmor_WDL.paa",
+			"MM_CamoSwapper\data\armors\M52A\82nd_M52A_Rifleman_Leg_WDL.paa",
 			"",
-			"82nd_Armor_New\data\armors\temp\82nd_M52D_Rifleman_WDL.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_M52D_Rifleman_WDL.paa"
 		};
 	};
 	class 82nd_CH252D_Stealth_BLK: 82nd_CH252D_Helmet_Base
@@ -5932,8 +5548,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
 		};
 	};
 	class 82nd_CH252D_Stealth_BLK_dp: 82nd_CH252D_Helmet_Base_dp
@@ -5944,8 +5560,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_BLK.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_BLK.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_CH252D_Stealth_DES: 82nd_CH252D_Stealth_BLK
@@ -5956,8 +5572,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth DES)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_DES.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_DES.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
 		};
 	};
 	class 82nd_CH252D_Stealth_DES_dp: 82nd_CH252D_Stealth_BLK_dp
@@ -5968,8 +5584,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth DES DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_DES.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_DES.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_CH252D_Stealth_SNO: 82nd_CH252D_Stealth_BLK
@@ -5980,8 +5596,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth SNO)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_SNO.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_SNO.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
 		};
 	};
 	class 82nd_CH252D_Stealth_SNO_dp: 82nd_CH252D_Stealth_BLK_dp
@@ -5992,8 +5608,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth SNO DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_SNO.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_SNO.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 	class 82nd_CH252D_Stealth_WDL: 82nd_CH252D_Stealth_BLK
@@ -6004,8 +5620,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth WDL)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_WDL.paa",
-			"82nd_Armor_New\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_WDL.paa",
+			"MM_CamoSwapper\data\armors\ODST\generic\ODST_Helmet_Visor_black_co"
 		};
 	};
 	class 82nd_CH252D_Stealth_WDL_dp: 82nd_CH252D_Stealth_BLK_dp
@@ -6016,8 +5632,8 @@ class CfgWeapons
 		displayName="[MM] CH252D (Stealth WDL DP)";
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\temp\82nd_CH252D_Blank_WDL.paa",
-			"82nd_Armor_New\data\armors\ODST\CH252D_DP_CO.paa"
+			"MM_CamoSwapper\data\armors\temp\82nd_CH252D_Blank_WDL.paa",
+			"MM_CamoSwapper\data\armors\ODST\CH252D_DP_CO.paa"
 		};
 	};
 };
@@ -6034,7 +5650,7 @@ class CfgFunctions
 	{
 		class functions
 		{
-			file="82nd_Armor_New\data\functions";
+			file="MM_CamoSwapper\data\functions";
 			class camoChange
 			{
 			};
@@ -6052,7 +5668,7 @@ class CfgFunctions
 		{
 			class camoWL
 			{
-				file="\82nd_Armor_New\camoWL_Key.sqf";
+				file="\MM_CamoSwapper\camoWL_Key.sqf";
 				postInit=1;
 			};
 		};
@@ -6070,40 +5686,40 @@ class CfgVehicles
                 displayName="Personalization";
                 condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                 statement="";
-                icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_blank.paa";
+                icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_blank.paa";
                 class Camo_Select
 				{
                     displayName="Change Camouflage";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_camo_menu.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_camo_menu.paa";
                     class Urban
                     {
                         displayName="Urban";
                         condition="true";
                         statement="[player, ""Urban""] call personalizeArmor_fnc_camoChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_camo_BLK.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_camo_BLK.paa";
                     };
                     class Desert
                     {
                         displayName="Desert";
                         condition="true";
                         statement="[_player, ""Desert""] call personalizeArmor_fnc_camoChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_camo_DES.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_camo_DES.paa";
                     };
                     class Winter
                     {
                         displayName="Winter";
                         condition="true";
                         statement="[_player, ""Winter""] call personalizeArmor_fnc_camoChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_camo_SNO.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_camo_SNO.paa";
                     };
                     class Woodland
                     {
                         displayName="Woodland";
                         condition="true";
                         statement="[_player, ""Woodland""] call personalizeArmor_fnc_camoChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_camo_WDL.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_camo_WDL.paa";
                     };
                 };
 				class Vest_Select_Air
@@ -6111,55 +5727,55 @@ class CfgVehicles
                     displayName="Change Vests (Air)";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airassault.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airassault.paa";
                     class AirRifleman
                     {
                         displayName="Air Assault";
                         condition="true";
                         statement="[player, ""AirAssault""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airassault.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airassault.paa";
                     };
                     class AirCorpsman
                     {
                         displayName="Corpsman";
                         condition="true";
                         statement="[player, ""AirMedic""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airmed.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airmed.paa";
                     };
                     class AirMG
                     {
                         displayName="Autorifleman";
                         condition="true";
                         statement="[player, ""AirMG""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airauto.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airauto.paa";
                     };
                     class AirGrenadier
                     {
                         displayName="Grenadier";
                         condition="true";
                         statement="[player, ""AirGrenadier""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airgren.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airgren.paa";
                     };
                     class AirMarksman
                     {
                         displayName="Marksman";
                         condition="true";
                         statement="[player, ""AirMarksman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airmark.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airmark.paa";
                     };
                     class AirBreacher
                     {
                         displayName="Breacher";
                         condition="true";
                         statement="[player, ""AirBreacher""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airbrch.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airbrch.paa";
                     };
                     class AirTeamLead
                     {
 						displayName="Team Lead";
 						condition="true";
 						statement="[player, ""AirTeamLead""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_airlead.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_airlead.paa";
 					};
                 };
 				class Vest_Select_Tyr
@@ -6167,55 +5783,55 @@ class CfgVehicles
                     displayName="Change Vests (Tyr)";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_blank.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_blank.paa";
                     class TyrRifleman
                     {
                         displayName="Rifleman";
                         condition="true";
                         statement="[player, ""TyrRifleman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_blank.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_blank.paa";
                     };
                     class TyrCorpsman
                     {
                         displayName="Corpsman";
                         condition="true";
                         statement="[player, ""TyrCorpsman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_corpsman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_corpsman.paa";
                     };
                     class TyrMG
                     {
                         displayName="Autorifleman";
                         condition="true";
                         statement="[player, ""TyrMG""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_autorifleman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_autorifleman.paa";
                     };
                     class TyrGrenadier
                     {
                         displayName="Grenadier";
                         condition="true";
                         statement="[player, ""TyrGrenadier""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_grenadier.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_grenadier.paa";
                     };
                     class TyrMarksman
                     {
                         displayName="Marksman";
                         condition="true";
                         statement="[player, ""TyrMarksman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_marksman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_marksman.paa";
                     };
                     class TyrBreacher
                     {
                         displayName="Breacher";
                         condition="true";
                         statement="[player, ""TyrBreacher""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_breacher.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_breacher.paa";
                     };
                     class TyrTeamLead
                     {
 						displayName="Team Lead";
 						condition="true";
 						statement="[player, ""TyrTeamLead""] call personalizeArmor_fnc_vestChange;";
-						icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_teamlead.paa";
+						icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_teamlead.paa";
 					};
                 };
 				class Vest_Select_Slp
@@ -6223,55 +5839,55 @@ class CfgVehicles
                     displayName="Change Vests (Sleipnir)";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_blank.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_blank.paa";
                     class SlpRifleman
                     {
                         displayName="Rifleman";
                         condition="true";
                         statement="[player, ""SlpRifleman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_blank.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_blank.paa";
                     };
                     class SlpCorpsman
                     {
                         displayName="Corpsman";
                         condition="true";
                         statement="[player, ""SlpCorpsman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_corpsman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_corpsman.paa";
                     };
                     class SlpMG
                     {
                         displayName="Autorifleman";
                         condition="true";
                         statement="[player, ""SlpMG""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_autorifleman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_autorifleman.paa";
                     };
                     class SlpGrenadier
                     {
                         displayName="Grenadier";
                         condition="true";
                         statement="[player, ""SlpGrenadier""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_grenadier.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_grenadier.paa";
                     };
                     class SlpMarksman
                     {
                         displayName="Marksman";
                         condition="true";
                         statement="[player, ""SlpMarksman""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_marksman.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_marksman.paa";
                     };
                     class SlpBreacher
                     {
                         displayName="Breacher";
                         condition="true";
                         statement="[player, ""SlpBreacher""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_breacher.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_breacher.paa";
                     };
                     class SlpTeamLead
                     {
 						displayName="Team Lead";
 						condition="true";
 						statement="[player, ""SlpTeamLead""] call personalizeArmor_fnc_vestChange;";
-						icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_teamlead.paa";
+						icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_teamlead.paa";
 					};
                 };
 				class Vest_Select_Aux
@@ -6279,27 +5895,27 @@ class CfgVehicles
 					displayName="Change Vests (Branches)";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_crew.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_crew.paa";
 					class Crew
 					{
 						displayName="Crew";
 						condition="true";
 						statement="[player, ""Crew""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_crew.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_crew.paa";
 					};
 					class Aviation
 					{
 						displayName="Aviation";
 						condition="true";
 						statement="[player, ""Aviation""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_aviation.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_aviation.paa";
 					};
 					class PJ
 					{
 						displayName="Aviaiton PJ";
 						condition="true";
 						statement="[player, ""PJ""] call personalizeArmor_fnc_vestChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_m52a_aviation2.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_m52a_aviation2.paa";
 					};
 				};
 				class Uniform_Select
@@ -6307,27 +5923,27 @@ class CfgVehicles
                     displayName="Change Uniform";
                     condition="(uniform player) in [""82nd_BDU_Morph_BASE"", ""82nd_BDU_Morph_ROLLED"", ""82nd_BDU_Morph_Short""]";
                     statement="";
-                    icon = "\82nd_Armor_New\data\ui\82nd_ui_bdu_base.paa";
+                    icon = "\MM_CamoSwapper\data\ui\82nd_ui_bdu_base.paa";
                     class Base
                     {
                         displayName="Default";
                         condition="true";
                         statement="[player, ""Base""] call personalizeArmor_fnc_uniformChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_bdu_base.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_bdu_base.paa";
                     };
                     class Rolled
                     {
                         displayName="Rolled Sleeves";
                         condition="true";
                         statement="[_player, ""Rolled""] call personalizeArmor_fnc_uniformChange;";
-                        icon = "\82nd_Armor_New\data\ui\82nd_ui_bdu_rolled.paa";
+                        icon = "\MM_CamoSwapper\data\ui\82nd_ui_bdu_rolled.paa";
 					};
 					class Short
 					{
 						displayName="Short Sleeves";
 						condition="true";
 						statement="[_player, ""Short""] call personalizeArmor_fnc_uniformChange;";
-						icon = "\82nd_Armor_New\data\ui\82nd_ui_bdu_short.paa";
+						icon = "\MM_CamoSwapper\data\ui\82nd_ui_bdu_short.paa";
                     };
                 };
 			};
@@ -6361,8 +5977,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Base_BLK.paa",
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Base_BLK.paa"
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Base_BLK.paa",
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Base_BLK.paa"
 		};
 		uniformclass="82nd_BDU_Morph_BASE";
 		weapons[]=
@@ -6408,8 +6024,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa",
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa"
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa",
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa"
 		};
 		uniformclass="82nd_BDU_Morph_ROLLED";
 		weapons[]=
@@ -6455,8 +6071,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa",
-			"82nd_Armor_New\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa"
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa",
+			"MM_CamoSwapper\data\armors\Uniforms\82nd_BDU_All_Rolled_BLK.paa"
 		};
 		uniformclass="82nd_BDU_Morph_Short";
 		weapons[]=
@@ -6504,7 +6120,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Purple_Up: 82nd_Shemagh_Purple
@@ -6520,7 +6136,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpurple_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpurple_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Red_Up: 82nd_Shemagh_Purple
@@ -6536,7 +6152,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Red: 82nd_Shemagh_Purple
@@ -6552,7 +6168,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghred_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghred_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Cyan: 82nd_Shemagh_Purple
@@ -6568,7 +6184,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Cyan_Up: 82nd_Shemagh_Purple
@@ -6584,7 +6200,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghcyan_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghcyan_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Gold: 82nd_Shemagh_Purple
@@ -6600,7 +6216,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Gold_Up: 82nd_Shemagh_Purple
@@ -6616,7 +6232,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgold_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgold_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Pink: 82nd_Shemagh_Purple
@@ -6632,7 +6248,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Pink_Up: 82nd_Shemagh_Purple
@@ -6648,7 +6264,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghpink_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghpink_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Tardis: 82nd_Shemagh_Purple
@@ -6664,7 +6280,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Tardis_Up: 82nd_Shemagh_Purple
@@ -6680,7 +6296,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghtardis_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghtardis_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Green: 82nd_Shemagh_Purple
@@ -6696,7 +6312,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Green_Up: 82nd_Shemagh_Purple
@@ -6712,7 +6328,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghgreen_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghgreen_up.paa"
 		};
 	};
 	class 82nd_Shemagh_White: 82nd_Shemagh_Purple
@@ -6728,7 +6344,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 		};
 	};
 	class 82nd_Shemagh_White_Up: 82nd_Shemagh_Purple
@@ -6744,7 +6360,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghwhite_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghwhite_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Black: 82nd_Shemagh_Purple
@@ -6760,7 +6376,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 		};
 	};
 	class 82nd_Shemagh_Black_Up: 82nd_Shemagh_Purple
@@ -6776,7 +6392,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\shemaghblack_up.paa"
+			"MM_CamoSwapper\data\armors\fw\shemaghblack_up.paa"
 		};
 	};
 	class 82nd_Shawggles: 82nd_Shemagh_Purple
@@ -6792,7 +6408,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\Shaw\shawggles.paa"
+			"MM_CamoSwapper\data\armors\Shaw\shawggles.paa"
 		};
 	};
 	class 82nd_Shemagh_OD: 82nd_Shemagh_Purple
@@ -6866,7 +6482,7 @@ class CfgGlasses
 		scope=0;
 		scopeArsenal=1;
 		mass=4;
-		model="\82nd_Armor_New\data\armors\fw\Crayon.p3d";
+		model="\MM_CamoSwapper\data\armors\fw\Crayon.p3d";
 		descriptionShort="Edible snack MRE.";
 		optreHUDStyle="ODST_1";
 		hiddenSelections[]=
@@ -6875,7 +6491,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Crayon_texture.paa"
+			"MM_CamoSwapper\data\armors\fw\Crayon_texture.paa"
 		};
 	};
 	class 82nd_Crayon_Lime: Crayon
@@ -6889,7 +6505,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Crayon_LIME.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Crayon_LIME.paa"
 		};
 	};
 	class 82nd_Crayon_Grape: Crayon
@@ -6903,7 +6519,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Crayon_PRP.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Crayon_PRP.paa"
 		};
 	};
 	class 82nd_Crayon_Cherry: Crayon
@@ -6917,7 +6533,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Crayon_RED.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Crayon_RED.paa"
 		};
 	};
 	class 82nd_Crayon_Orange: Crayon
@@ -6931,7 +6547,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Crayon_ORNG.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Crayon_ORNG.paa"
 		};
 	};
 	class 82nd_Crayon_Blue: Crayon
@@ -6945,7 +6561,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Crayon_BLU.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Crayon_BLU.paa"
 		};
 	};
 	class 82nd_Scarf_SmartDown_BLK: OPTRE_HUD_Glasses
@@ -6961,7 +6577,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 		};
 	};
 	class 82nd_Scarf_SmartUp_BLK: 82nd_Shemagh_Purple
@@ -6977,7 +6593,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_BLK.paa"
 		};
 	};
 	class 82nd_Scarf_SmartDown_DES: OPTRE_HUD_Glasses
@@ -6993,7 +6609,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 		};
 	};
 	class 82nd_Scarf_SmartUp_DES: 82nd_Shemagh_Purple
@@ -7009,7 +6625,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_DES.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_DES.paa"
 		};
 	};
 	class 82nd_Scarf_SmartDown_SNO: OPTRE_HUD_Glasses
@@ -7025,7 +6641,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 		};
 	};
 	class 82nd_Scarf_SmartUp_SNO: 82nd_Shemagh_Purple
@@ -7041,7 +6657,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_SNO.paa"
 		};
 	};
 	class 82nd_Scarf_SmartDown_WDL: OPTRE_HUD_Glasses
@@ -7057,7 +6673,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 		};
 	};
 	class 82nd_Scarf_SmartUp_WDL: 82nd_Shemagh_Purple
@@ -7073,7 +6689,7 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
+			"MM_CamoSwapper\data\armors\fw\82nd_Scarf_Smart_WDL.paa"
 		};
 	};
 	class 82nd_Bala_BeastNoG_BLK: 82nd_Shemagh_Purple
@@ -7095,12 +6711,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_BLK",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_BLK",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7124,12 +6740,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_DES",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_DES",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7153,12 +6769,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_SNO",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_SNO",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7182,12 +6798,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_WDL",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_WDL",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7211,12 +6827,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_BLK",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_BLK",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7240,12 +6856,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_DES",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_DES",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7269,12 +6885,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_SNO",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_SNO",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7298,12 +6914,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Beast_WDL",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Beast_WDL",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7327,12 +6943,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_BLK",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_BLK",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7356,12 +6972,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_DES",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_DES",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7385,12 +7001,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_SNO",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_SNO",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7414,12 +7030,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_WDL",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_WDL",
 			""
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7443,12 +7059,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_BLK",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_BLK",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7472,12 +7088,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_DES",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_DES",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7501,12 +7117,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_SNO",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_SNO",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};
@@ -7530,12 +7146,12 @@ class CfgGlasses
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Mask_WDL",
-			"82nd_Armor_New\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Mask_WDL",
+			"MM_CamoSwapper\data\armors\fw\Bala\82nd_Bala_Goggle_BLK_ca"
 		};
 		hiddenSelectionsMaterials[]=
 		{
-			"82nd_Armor_New\data\armors\fw\V_BGH.rvmat",
+			"MM_CamoSwapper\data\armors\fw\V_BGH.rvmat",
 			"",
 			""
 		};

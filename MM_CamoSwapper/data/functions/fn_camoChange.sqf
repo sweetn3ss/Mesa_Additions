@@ -30,7 +30,6 @@ params [
 // These constants are related to the setup of the mod(s) and the naming scheme of items
 private	_armorTextureRoot    = "82nd_Armor\data\armors";
 private	_backpackTextureRoot = "82nd_Radio_Packs\data";
-private	unitTexturePrefixes   = "82nd";
 
 // ###############################
 // ### Compatibility Constants ###
@@ -92,37 +91,39 @@ switch (_selectedCamoType) do {
 // ###############
 //
 // The uniform texture is swapped (for compatible uniforms)
-if !(_currentUniform == "") then {
+if (_currentUniform != "") then {
 	//if (_compatibleUniforms find _currentUniform != -1) then {
 	private _uniformCamoTypes = (configFile >> "CfgWeapons" >> _currentUniform >> "camoTypes") call BIS_fnc_getCfgData;
 	private _uniformTempArray = [_currentUniform, "_"] call BIS_fnc_splitString;
 	
 	// This is the last item
-	private _uniformCamoRef = _uniformTempArray # (count _uniformTempArray - 1);
+	private _uniformCamoRef = _uniformTempArray # ((count _uniformTempArray) - 1);
 	if ((_uniformTempArray # 0) find UnitTexturePrefixes != -1 && _uniformCamoTypes find _camoType != -1) then {
 		// Get the entire array of textures for the item
-		private _uniformCamoTexture = getObjectTextures _currentUniform;
+		private _uniformCamoTexture = getObjectTextures _unit;
 		
 		// Replace the value of the last item in array with the preferred camo
 		// for loop replacing each texture
 		for "_i" from 0 to ((count _uniformCamoTexture) -1) do {
 			private _currentTexture = (_uniformCamoTexture select _i); // Grab the nth texture
-			private _currentUniformTempArray = [_currentTexture, "_"] BIS_fnc_splitString;
-			private _currentUniformTempArrayExtension = [(_currentUniformTempArray # ((count _currentUniformTempArray) -1)), "."] BIS_fnc_splitString;
-			
-			// Set ABC.paa to XYZ.paa
-			_currentUniformTempArrayExtension set [0, _camoType];
-			
-			// Move XYZ.paa back into the texture path
-			_currentUniformTempArray set [0, (_currentUniformTempArrayExtension joinString ".")];
-			
-			// Recombines the original array, but with our replaced value
-			private _uniformTexturePath = _currentUniformTempArray joinString "_";
-			_unit setObjectTextureGlobal [_i, _uniformTexturePath];
+			private _currentUniformTempArray = [_currentTexture, "_"] call BIS_fnc_splitString;
+			if ((count _currentUniformTempArray) > 0) then {
+				private _currentUniformTempArrayExtension = [(_currentUniformTempArray # ((count _currentUniformTempArray) -1)), "."] call BIS_fnc_splitString;
+				
+				// Set ABC.paa to XYZ.paa
+				_currentUniformTempArrayExtension set [0, _camoType];
+				
+				// Move XYZ.paa back into the texture path
+				_currentUniformTempArray set [(count _currentUniformTempArray) -1, (_currentUniformTempArrayExtension joinString ".")];
+				
+				// Recombines the original array, but with our replaced value
+				private _uniformTexturePath = _currentUniformTempArray joinString "_";
+				_unit setObjectTextureGlobal [_i, _uniformTexturePath];
+			};
 		};
 	};
 };
-
+systemChat str "Uniforms Completed";
 // ############
 // ### Vest ###
 // ############
@@ -201,17 +202,17 @@ if !(_currentVest == "") then {
 // Please ignore this shit
 // It's for uh... debugging?
 // Yeah. Debugging...
-private _playerVest = vest player;
-private _vestTempArray1 = [_playervest,"_"] call BIS_fnc_splitString;
-camoRef0 = _vestTempArray1 # 0;
-camoRef3 = _vestTempArray1 # 3;
+// private _playerVest = vest player;
+// private _vestTempArray1 = [_playervest,"_"] call BIS_fnc_splitString;
+// camoRef0 = _vestTempArray1 # 0;
+// camoRef3 = _vestTempArray1 # 3;
 
 // ################
 // ### Backpack ###
 // ################
 //
 // If the player has a compatible backpack, that backpack has its texture swapped.
-if !(_currentBackpack == "") then {	
+if (_currentBackpack != "") then {	
 	if (compatibleBackpacks find _currentBackpack != -1) then {
 
 		// "Which backpack is the user wearing?"
@@ -240,7 +241,7 @@ if !(_currentBackpack == "") then {
 		};
 	};
 };
-
+systemChat str camoType;
 // ###############
 // ###  Helmet ###
 // ###############
@@ -248,7 +249,7 @@ if !(_currentBackpack == "") then {
 // Helmets are swapped as items.
 // This makes hud management easier and is compatible with the way visor opaqueness works.
 // All 'duplicate' helmets of non-default camouflage are marked with 'scope = 1;' in their classes
-if !(_currentHelmet = "") then {
+if (_currentHelmet != "") then {
 	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData;
 	private _helmetCamoTypes = _checkedHelmet; // May be able to remove this depending on how much arma has a fit about it
 	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
@@ -257,22 +258,22 @@ if !(_currentHelmet = "") then {
 	private _helmetCamoRef = _helmetTempArray # ((count _helmetTempArray) -1);
 	// Helmets can have their camo be in the last or 2nd-to-last item in the array depending on if they are using a depolarized version
 	private _helmetCamoRef_DP = _helmetTempArray # ((count _helmetTempArray) -2);
-	
 	if ((_helmetTempArray # 0) find UnitTexturePrefixes != -1 && _helmetCamoTypes find _camoType != -1) then {
 		//Replace the value of the last or second-to-last item in array with the preferred camo
-		if (_helmetCamoRef_DP in _helmetCamoTypes) then {
-			_helmetTempArray set [((count _helmetTempArray - 2)), _camoType];
+		if (_helmetCamoTypes find _helmetCamoRef_DP != -1) then {
+			_helmetTempArray set [((count _helmetTempArray) - 2), _camoType];
 		} else {
-			_helmetTempArray set [((count _helmetTempArray - 1)), _camoType];
+			_helmetTempArray set [((count _helmetTempArray) - 1), _camoType];
 		};
 		
 		// Recombines the original array but with our replaced value
 		private _newHelmet = _helmetTempArray joinString "_";
-		
+		systemChat str _newHelmet;
 		removeHeadgear _unit;
 		_unit addHeadgear _newHelmet;
 	};
 };
+systemChat str "Helmets Completed";
 
 // ################
 // ### Facewear ###
