@@ -15,7 +15,7 @@ This is the repository to host the modularly applicable functions for OPTRE unit
 
 4. Spartan Laser
 
-Each Category has its own intentions, and depending on functional growth, they may be additionally reuploaded as their own distinct mods. This would be intended to minimize modlist size for any units wishing to use some, though not all, of the systems provided.
+Each Category has its own intentions, and depending on functional growth, they may be reuploaded as their own distinct mods. This would be intended to minimize modlist size for any units wishing to use some, though not all, of the systems provided.
 
 <h2> Shield Tech </h2>
 
