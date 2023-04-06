@@ -23,14 +23,6 @@ params [
 	["_selectedCamoType", "Urban"]
 ];
 
-// #################
-// ### Constants ###
-// #################
-//
-// These constants are related to the setup of the mod(s) and the naming scheme of items
-private	_armorTextureRoot    = "82nd_Armor\data\armors";
-private	_backpackTextureRoot = "82nd_Radio_Packs\data";
-
 // ###############################
 // ### Compatibility Constants ###
 // ###############################
@@ -38,12 +30,6 @@ private	_backpackTextureRoot = "82nd_Radio_Packs\data";
 // These arrays define all items that the script will operate on.
 // This idiot-proofs the script so as not to delete items and try to replace them with those that don't exist
 // AKA if an item isn't specified in these lists, NOTHING happens on runtime.
-
-private _compatibleUniforms = [
-	"82nd_BDU_Morph_BASE",
-	"82nd_BDU_Morph_ROLLED",
-	"82nd_BDU_Morph_Short"
-];
 
 // Only add BLK versions of the gun
 private _compatibleRifles = [
@@ -253,24 +239,25 @@ if (_currentHelmet != "") then {
 	private _checkedHelmet = (configFile >> "CfgWeapons" >> _currentHelmet >> "camoTypes") call BIS_fnc_getCfgData;
 	private _helmetCamoTypes = _checkedHelmet; // May be able to remove this depending on how much arma has a fit about it
 	private _helmetTempArray = [_currentHelmet, "_"] call BIS_fnc_splitString;
-	
-	// This is the last item
-	private _helmetCamoRef = _helmetTempArray # ((count _helmetTempArray) -1);
-	// Helmets can have their camo be in the last or 2nd-to-last item in the array depending on if they are using a depolarized version
-	private _helmetCamoRef_DP = _helmetTempArray # ((count _helmetTempArray) -2);
-	if ((_helmetTempArray # 0) find UnitTexturePrefixes != -1 && _helmetCamoTypes find _camoType != -1) then {
-		//Replace the value of the last or second-to-last item in array with the preferred camo
-		if (_helmetCamoTypes find _helmetCamoRef_DP != -1) then {
-			_helmetTempArray set [((count _helmetTempArray) - 2), _camoType];
-		} else {
-			_helmetTempArray set [((count _helmetTempArray) - 1), _camoType];
+	if ((count _helmetTempArray) > 1) then {
+		// This is the last item
+		private _helmetCamoRef = _helmetTempArray # ((count _helmetTempArray) -1);
+		// Helmets can have their camo be in the last or 2nd-to-last item in the array depending on if they are using a depolarized version
+		private _helmetCamoRef_DP = _helmetTempArray # ((count _helmetTempArray) -2);
+		if ((_helmetTempArray # 0) find UnitTexturePrefixes != -1 && _helmetCamoTypes find _camoType != -1) then {
+			//Replace the value of the last or second-to-last item in array with the preferred camo
+			if (_helmetCamoTypes find _helmetCamoRef_DP != -1) then {
+				_helmetTempArray set [((count _helmetTempArray) - 2), _camoType];
+			} else {
+				_helmetTempArray set [((count _helmetTempArray) - 1), _camoType];
+			};
+			
+			// Recombines the original array but with our replaced value
+			private _newHelmet = _helmetTempArray joinString "_";
+			systemChat str _newHelmet;
+			removeHeadgear _unit;
+			_unit addHeadgear _newHelmet;
 		};
-		
-		// Recombines the original array but with our replaced value
-		private _newHelmet = _helmetTempArray joinString "_";
-		systemChat str _newHelmet;
-		removeHeadgear _unit;
-		_unit addHeadgear _newHelmet;
 	};
 };
 systemChat str "Helmets Completed";
@@ -280,30 +267,20 @@ systemChat str "Helmets Completed";
 // ################
 //
 // Facewear items are swapped as items.
-if !(_currentFW == "") then {
-	private _checkedFW = (configFile >> "CfgGlasses" >> _currentFW >> "camoTypes") call BIS_fnc_getCfgData;
-	if (_checkedFW isEqualTo true) then {
-		private _fwTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
-		private _fwType = _fwTempArray # 1;
-		private _fwSubType = _fwTempArray # 2;
+if (_currentFW != "") then {
+	private _FWCamoTypes = (configFile >> "CfgGlasses" >> _currentFW >> "camoTypes") call BIS_fnc_getCfgData;
+	private _FWTempArray = [_currentFW, "_"] call BIS_fnc_splitString;
+	
+	// This is the last item
+	if ((_FWTempArray # 0) find UnitTexturePrefixes != -1 && _FWCamoTypes find _camoType != -1) then {
+		if ((count _FWTempArray) > 0) then {
+			_FWTempArray set [((count _FWTempArray) - 1), _camoType];
 			
-		private _fwBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _fwType, _fwSubType];
-		if (compatibleFW find _fwBLK != -1) then {
-		
-			if (_fwType == "Bala") then {
-				if (_fwSubType == "G" || _fwSubType == "NoG" || _fwSubType == "BeastG" || _fwSubType == "BeastNoG") then {
-					private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
-					removeGoggles _unit;
-					_unit addGoggles _fwTypeName;
-				};
-			};
-			if (_fwType == "Scarf") then {
-				if (_fwSubType == "SmartDown" || _fwSubType == "SmartUp") then {
-					private _fwTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _fwType, _fwSubType, _camoType];
-					removeGoggles _unit;
-					_unit addGoggles _fwTypeName;
-				};
-			};
+			// Recombines the original array but with our replaced value
+			private _newFW = _FWTempArray joinString "_";
+			systemChat str _newFW;
+			removeGoggles _unit;
+			_unit addGoggles _newFW;
 		};
 	};
 };
@@ -313,31 +290,20 @@ if !(_currentFW == "") then {
 // ################
 //
 // HMDs are swapped as items.
-if !(_currentHMD == "") then {
-	private _checkedHMD = (configFile >> "CfgGlasses" >> _currentHMD >> "camoTypes") call BIS_fnc_getCfgDataBool;
-	if (_checkedHMD isEqualTo true) then {
+if (_currentHMD != "") then {
+	private _HMDCamoTypes = (configFile >> "CfgWeapons" >> _currentHMD >> "camoTypes") call BIS_fnc_getCfgData;
+	private _HMDTempArray = [_currentHMD, "_"] call BIS_fnc_splitString;
 	
-		private _hmdTempArray = [_currentHMD, "_"] call BIS_fnc_splitString;
-		private _hmdType = _hmdTempArray # 1;
-		private _hmdSubType = _hmdTempArray # 2;
+	// This is the last item
+	if ((_HMDTempArray # 0) find UnitTexturePrefixes != -1 && _HMDCamoTypes find _camoType != -1) then {
+		if ((count _HMDTempArray) > 0) then {
+			_HMDTempArray set [((count _HMDTempArray) - 1), _camoType];
 			
-		private _hmdBLK = format ["%1_%2_%3_BLK", unitTexturePrefixes, _hmdType, _hmdSubType];
-		if (compatibleHMDs find _hmdBLK != -1) then {
-		
-			if (_hmdType == "CatHMD") then {
-				if (_hmdSubType == "Base") then {
-					private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
-					_unit removeWeapon _currentHMD;
-					_unit addWeapon _hmdTypeName;
-				};
-			};
-			if (_hmdType == "ScarfHMD") then {
-				if (_hmdSubType == "SmartDown" || _hmdSubType == "SmartUp") then {
-					private _hmdTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _hmdType, _hmdSubType, _camoType];
-					_unit removeWeapon _currentHMD;
-					_unit addWeapon _hmdTypeName;
-				};
-			};
+			// Recombines the original array but with our replaced value
+			private _newHMD = _HMDTempArray joinString "_";
+			systemChat str _newHMD;
+			_unit removeWeapon _currentHMD;
+			_unit addWeapon _newHMD;
 		};
 	};
 };

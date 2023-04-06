@@ -6720,8 +6720,14 @@ class CfgGlasses
 			"",
 			""
 		};
+		camoTypes[]={
+			"BLK",
+			"DES",
+			"SNO",
+			"WDL"
+		};
 	};
-	class 82nd_Bala_BeastNoG_DES: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastNoG_DES: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6750,7 +6756,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastNoG_SNO: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastNoG_SNO: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6779,7 +6785,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastNoG_WDL: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastNoG_WDL: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6808,7 +6814,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastG_BLK: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastG_BLK: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -6837,7 +6843,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastG_DES: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastG_DES: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6866,7 +6872,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastG_SNO: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastG_SNO: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6895,7 +6901,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_BeastG_WDL: 82nd_Shemagh_Purple
+	class 82nd_Bala_BeastG_WDL: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6924,7 +6930,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_NoG_BLK: 82nd_Shemagh_Purple
+	class 82nd_Bala_NoG_BLK: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -6953,7 +6959,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_NoG_DES: 82nd_Shemagh_Purple
+	class 82nd_Bala_NoG_DES: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -6982,7 +6988,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_NoG_SNO: 82nd_Shemagh_Purple
+	class 82nd_Bala_NoG_SNO: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -7011,7 +7017,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_NoG_WDL: 82nd_Shemagh_Purple
+	class 82nd_Bala_NoG_WDL: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -7040,7 +7046,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_G_BLK: 82nd_Shemagh_Purple
+	class 82nd_Bala_G_BLK: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -7069,7 +7075,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_G_DES: 82nd_Shemagh_Purple
+	class 82nd_Bala_G_DES: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -7098,7 +7104,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_G_SNO: 82nd_Shemagh_Purple
+	class 82nd_Bala_G_SNO: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
@@ -7127,7 +7133,7 @@ class CfgGlasses
 			""
 		};
 	};
-	class 82nd_Bala_G_WDL: 82nd_Shemagh_Purple
+	class 82nd_Bala_G_WDL: 82nd_Bala_BeastNoG_BLK
 	{
 		scope=2;
 		scopeArsenal=1;
