@@ -3,10 +3,10 @@ class DefaultEventhandlers;
 
 class CfgPatches
 {
-	class 82nd_Armor_New
+	class MM_CamoSwapper
 	{
 		author="Mesa";
-		name="82nd Armor";
+		name="Camo Swapper";
 		units[]={};
 		weapons[]={};
 		magazine[]={};
