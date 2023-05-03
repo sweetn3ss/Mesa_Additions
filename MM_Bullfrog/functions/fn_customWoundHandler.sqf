@@ -8,6 +8,6 @@ if(PlzNoFallMommy) then {
 
 // DAISY SUGGESTED EDIT
 /* 
-if(PlzNoFallMommy) exitwith{[]}; 
+if(PlzNoFallMommy) exitwith{diag_log "[INFO] MM_Bullfrog | Damage will not be applied this session."}; 
 [_unit,_allDamages,_typeOfDamage] call ace_medical_damage_fnc_woundsHandlerBase;
 */

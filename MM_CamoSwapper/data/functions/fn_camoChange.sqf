@@ -131,6 +131,14 @@ if !(_currentVest == "") then {
 			
 			private _allItems     = vestItems _unit;
 			
+			/* DAISY EDIT 1 START
+			private _vestMags = magazinesAmmoCargo vestContainer _unit; //getcha mags
+			{
+				_allItems = _allItems - _x # 0;
+			} forEach _vestMags; //remove them from _allItems
+			// DAISY EDIT 1 END */
+
+
 			// TODO: use these for proper magazine insertion!
 			//private _allMagTypes  = magazinesDetailVest _unit; // https://community.bistudio.com/wiki/magazinesDetailVest
 			//private _allMags      = vestMagazines _unit;
@@ -140,8 +148,14 @@ if !(_currentVest == "") then {
 			_unit addVest _vestTypeName;
 			
 			// Add all items to the new vest
-			{ _unit addItemToVest _x } forEach _allItems;
+			{ _unit addItemToVest _x } forEach _allItems; 
 			
+			/* DAISY EDIT 2 START
+			{
+				_unit addMagazine _x;
+			} forEach _vestMags; // add 'em back. ez pz.
+			// DAISY EDIT 2 END */
+
 			// Adding all items like this means that all magazines are automatically filled.
 			// To fix this, remove all magazines based on the magazine list
 			// Then add all of them with the addMagazine command, specifying round count
