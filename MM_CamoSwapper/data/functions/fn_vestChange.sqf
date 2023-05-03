@@ -95,44 +95,19 @@ if !(_currentVest == "") then {
 			private _vestTypeName = format ["%1_%2_%3_%4", _unitTexturePrefix, _vestType, _vestVariant, _vestCamo];
 			// Setup for ammo restoration, must be before 'removeVest _unit;' START OF DAISY EDIT
             private _allItems     = vestItems _unit;
-            private _currentMags = magazinesAmmoFull _unit; 
-            private _magArray = [];
+			
+			// DAISY EDIT START
+			private _vestMags = magazinesAmmoCargo vestContainer _unit; //getcha mags
+			
+			{_allItems = _allItems - _x # 0;} forEach _vestMags; //remove mags from _allItems
 
-            // remove non-vest mags from _currentMags 
-            for [{_i = 0},{_i <= (count _currentMags)},{_i = _i + 1}] do { 
-                private _arrayPos = _currentMags select _i;
-                private _containerPos = _arrayPos select 4;
-                if !(_containerPos == "Vest") then {
-                    _currentMags deleteAt _i;
-                    _i = _i - 1;
-                };
-            };
+			removeVest _unit;
+			_unit addVest _vestTypeName;
+			
+			{ _unit addItemToVest _x } forEach _allItems; // add items back
 
-            // create mag names, assign subarray to another array (could do another 'for' loop to modify _currentMags, but a new array is easier.)
-            for "_i" from 0 to (count _currentMags) do {
-                private _subArray = _currentMags select _i;
-                _subArray deleteRange [2,6];
-                _magArray pushBack _subArray;
-            };
-
-            //hint str _magArray; // (debug)
-            
-            // Checks for magazines and removes them
-            for "_i" from 0 to (count _magArray) do {
-                private _subArray = _magArray select _i;
-                private _magName = _subArray select 0;
-                private _magPos = _allItems find _magName;
-                _allItems deleteAt _magPos;
-            }; 
-            
-            removeVest _unit;
-            _unit addVest _vestTypeName; 
-
-            // Adds non magazine items back to vest
-            {_unit addItemToVest _x} forEach _allItems; 
-            
-            // Add mags to Vest
-            {_unit addMagazine _x} forEach _magArray; // END OF DAISY EDIT
+			{ _unit addMagazine _x; } forEach _vestMags; // add mags back - ez pz.
+			// DAISY EDIT END
 		};
 	};
 };
