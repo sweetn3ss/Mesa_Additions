@@ -131,12 +131,12 @@ if !(_currentVest == "") then {
 			
 			private _allItems     = vestItems _unit;
 			
-			/* DAISY EDIT 1 START
+			// DAISY EDIT 1 START
 			private _vestMags = magazinesAmmoCargo vestContainer _unit; //getcha mags
 			{
 				_allItems = _allItems - _x # 0;
 			} forEach _vestMags; //remove them from _allItems
-			// DAISY EDIT 1 END */
+			// DAISY EDIT 1 END 
 
 
 			// TODO: use these for proper magazine insertion!
@@ -150,52 +150,11 @@ if !(_currentVest == "") then {
 			// Add all items to the new vest
 			{ _unit addItemToVest _x } forEach _allItems; 
 			
-			/* DAISY EDIT 2 START
+			// DAISY EDIT 2 START
 			{
 				_unit addMagazine _x;
 			} forEach _vestMags; // add 'em back. ez pz.
-			// DAISY EDIT 2 END */
-
-			// Adding all items like this means that all magazines are automatically filled.
-			// To fix this, remove all magazines based on the magazine list
-			// Then add all of them with the addMagazine command, specifying round count
-			
-			// TODO: Fix magazine ammo count
-			
-			// Remove all Magazines
-			// removeMagazine
-			// removeMagazines
-			//{ (vestContainer _unit) removeMagazines _x } forEach _allMagTypes;
-			
-			// Add in each magazine with correct ammo count
-			// TODO maybe use https://community.bistudio.com/wiki/addMagazineCargoGlobal or https://community.bistudio.com/wiki/addMagazineGlobal ?
-			
-			/*
-			private _magType = "";
-			private _magRounds = 5;
-			
-			{ 
-				_magType = _x # 0;
-				_magRounds = _x # 1;
-				//(vestContainer _unit) addMagazine _x; 
-				(vestContainer _unit) addMagazine [_magType, _magRounds];
-			} forEach _allTypeMags;*/
-			
-			/*
-			// https://community.bistudio.com/wiki/magazinesAmmoCargo
-			{ 
-				_magType   = _x;
-				_magRounds = _x;
-				
-				(vestContainer _unit) addMagazine [_magType, _magRounds]; 
-			
-			} forEach _allMags;*/
-			
-			// ### Debug Garbage ###
-			//_textures = _allTypeMags # 0;
-			//_texture1 = _textures # 1;
-			//_texture1string = format ["the item is: %1", _texture1];
-			//hint _texture1string;
+			// DAISY EDIT 2 END
 		};
 	};
 };
