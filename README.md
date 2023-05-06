@@ -23,7 +23,7 @@ Each Category has its own intentions, and depending on functional growth, they m
 
 The shield tech is currently only a bubble shield, as seen in Halo 3, and Halo: Reach. This may be expanded upon in the future, depending on scripting hang-ups, as well as time able to be spent on expansion. Some assets are ready to expand the shield systems, though by no means does this guarantee their implementation.
 
-<h2> Camo Tech </h2>
+<h2> Camo Tech PENDING REWORK </h2>
 
 The camo tech is intended to be a modular system geared toward allowing infantry of any unit to easily and swiftly swap between a multitude of camo presets made by said unit's mod team. The system is rather simple, and only requires server settings be updated alongside minor config updates. Appropriate textures must also be managed, though the script itself will do the rest of the work.
 
