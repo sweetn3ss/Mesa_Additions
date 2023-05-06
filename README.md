@@ -15,6 +15,8 @@ This is the repository to host the modularly applicable functions for OPTRE unit
 
 4. Spartan Laser
 
+5. Maglock Mania Rework
+
 Each Category has its own intentions, and depending on functional growth, they may be reuploaded as their own distinct mods. This would be intended to minimize modlist size for any units wishing to use some, though not all, of the systems provided.
 
 <h2> Shield Tech </h2>
@@ -32,6 +34,10 @@ Jump packs are notoriously hard to get right in most of Arma 3, due to limitatio
 <h2> Spartan Laser </h2>
 
 The Spartan Laser, or M6G Grindell/Galilean Non-Linear Rifle, is a staple of Halo as a genre, and its absence from the Arma 3 Halo community is not unnoticed. The model is also used(with permission) in OPAEX, though some may prefer its implementation here rather than there.
+
+<h2> Maglock Mania Rework </h2>
+
+While Cardboardboxo's mod is very well made, he doesn't often have the necessary free time to keep it up-to-date and bug-free. We've gotten permission from him to modify it to our tastes, including keeping our instance of it current and capable.
 
 <h2> Closing Statement </h2>
 
