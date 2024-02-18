@@ -5,7 +5,7 @@ class CfgPatches
 {
 	class MM_CamoSwapper
 	{
-		author="Mesa";
+		author="Gray";
 		name="Camo Swapper";
 		units[]={};
 		weapons[]={};
