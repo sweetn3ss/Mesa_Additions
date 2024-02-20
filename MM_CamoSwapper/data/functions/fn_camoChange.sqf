@@ -53,6 +53,8 @@ private _currentFW = goggles _unit;
 private _currentRifle = primaryWeapon _unit;
 private _currentHMD = hmd _unit;
 
+private _errorLog = [];
+
 // Set the camo suffix
 // This is not necessarily the string that is sent to the function
 private _camoType = "BLK";
@@ -65,7 +67,8 @@ switch (_selectedCamoType) do {
 						_camoType = "BLK"; // Fail safe default
 						
 						//Error message when invalid _camoType (due to some fuckup by someone extending this later)
-						hint "ERROR: Incorrect 82nd SOC Camo";
+						hint "[ERROR] MM_CamoSwapper | Invalid Camo Type (fn_camoChange.sqf, ln 59)";
+						diag_log "[ERROR] MM_CamoSwapper | Invalid Camo Type (fn_camoChange.sqf, ln 59)";
 						
 						//TODO: Return false for logging purposes
 						//false;
@@ -107,6 +110,12 @@ if (_currentUniform != "") then {
 				_unit setObjectTextureGlobal [_i, _uniformTexturePath];
 			};
 		};
+		// log happy boy behavior
+		_errorLog append 1;
+	} else {
+		// log sad boy behavior
+		diag_log "[ERROR] MM_CamoSwapper | " +str _currentUniform+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 81)";
+		_errorLog append 0;
 	};
 };
 systemChat str "Uniforms Completed";
@@ -129,33 +138,31 @@ if !(_currentVest == "") then {
 		if (_vestType == "M52A" || _vestType == "M52D") then {
 			private _vestTypeName = format ["%1_%2_%3_%4", unitTexturePrefixes, _vestType, _vestSubtype, _camoType];
 			
+			// fetch items and magazines
 			private _allItems     = vestItems _unit;
+			private _vestMags = magazinesAmmoCargo vestContainer _unit; 
 			
-			// DAISY EDIT 1 START
-			private _vestMags = magazinesAmmoCargo vestContainer _unit; //getcha mags
+			// remove magazines from items' array
 			{
 				_allItems = _allItems - _x # 0;
-			} forEach _vestMags; //remove them from _allItems
-			// DAISY EDIT 1 END 
+			} forEach _vestMags; 
 
-
-			// TODO: use these for proper magazine insertion!
-			//private _allMagTypes  = magazinesDetailVest _unit; // https://community.bistudio.com/wiki/magazinesDetailVest
-			//private _allMags      = vestMagazines _unit;
-			//private _allTypeMags  = magazinesAmmoCargo vestContainer _unit;
-		
+			// TAKE THOSE CLOTHES OFF
 			removeVest _unit;
 			_unit addVest _vestTypeName;
 			
 			// Add all items to the new vest
 			{ _unit addItemToVest _x } forEach _allItems; 
 			
-			// DAISY EDIT 2 START
+			// add all magazines to the new vest
 			{
 				_unit addMagazine _x;
-			} forEach _vestMags; // add 'em back. ez pz.
-			// DAISY EDIT 2 END
+			} forEach _vestMags; 
 		};
+		_errorLog append 1;
+	} else {
+		diag_log "[ERROR] MM_CamoSwapper | " +str _currentVest+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 81)";
+		_errorLog append 0;
 	};
 };
 // Please ignore this shit
@@ -172,7 +179,42 @@ if !(_currentVest == "") then {
 //
 // If the player has a compatible backpack, that backpack has its texture swapped.
 if (_currentBackpack != "") then {	
-	if (compatibleBackpacks find _currentBackpack != -1) then {
+	private _backpackCamoTypes = (configFile >> "CfgWeapons" >> _currentBackpack >> "camoTypes") call BIS_fnc_getCfgData;
+	private _backpackTempArray = [_currentBackpack, "_"] call BIS_fnc_splitString;
+	
+	// This is the last item
+	private _backpackCamoRef = _backpackTempArray # ((count _backpackTempArray) - 1);
+	if ((_backpackTempArray # 0) find UnitTexturePrefixes != -1 && _backpackCamoTypes find _camoType != -1) then {
+		// Get the entire array of textures for the item
+		private _backpackCamoTexture = getObjectTextures _unit;
+		
+		// Replace the value of the last item in array with the preferred camo
+		// for loop replacing each texture
+		for "_i" from 0 to ((count _backpackCamoTexture) -1) do {
+			private _currentTexture = (_backpackCamoTexture select _i); // Grab the nth texture
+			private _currentBackpackTempArray = [_currentTexture, "_"] call BIS_fnc_splitString;
+			if ((count _currentBackpackTempArray) > 0) then {
+				private _currentBackpackTempArrayExtension = [(_currentBackpackTempArray # ((count _currentBackpackTempArray) -1)), "."] call BIS_fnc_splitString;
+				
+				// Set ABC.paa to XYZ.paa
+				_currentBackpackTempArrayExtension set [0, _camoType];
+				
+				// Move XYZ.paa back into the texture path
+				_currentBackpackTempArray set [(count _currentBackpackTempArray) -1, (_currentBackpackTempArrayExtension joinString ".")];
+				
+				// Recombines the original array, but with our replaced value
+				private _backpackTexturePath = _currentBackpackTempArray joinString "_";
+				_unit setObjectTextureGlobal [_i, _backpackTexturePath];
+			};
+		};
+		_errorLog append 1;
+	} else {
+		diag_log "[ERROR] MM_CamoSwapper | " +str _currentBackpack+ " is not compatible with CamoSwapper. Check MM_CamoSwapper\config.cpp (fn_camoChange.sqf, ln 111)"
+		_errorLog append 0;
+	};
+};
+	
+/*	if (compatibleBackpacks find _currentBackpack != -1) then {
 
 		// "Which backpack is the user wearing?"
 		private _backpackTempArray = [_currentBackpack, "_"] call BIS_fnc_splitString;
@@ -199,7 +241,7 @@ if (_currentBackpack != "") then {
 			};
 		};
 	};
-};
+};*/
 systemChat str camoType;
 // ###############
 // ###  Helmet ###
@@ -435,3 +477,9 @@ if !(_currentRifle == "") then {
 		};
 	};
 };
+
+{
+	if (_x == 0) exitWith {hintSilent "MM_CamoSwapper | One or more errors have occured in execution of fn_camoChange. Please check your .rpt file for additional information."; return false;};
+} forEach _errorLog;
+
+return true;
