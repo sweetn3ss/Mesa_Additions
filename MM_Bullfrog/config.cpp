@@ -11,7 +11,8 @@ class CfgPatches
         {
             "Mesa",
             "Outshadow",
-            "Silencer"
+            "Silencer",
+			"Daisy"
         };
     };
 };

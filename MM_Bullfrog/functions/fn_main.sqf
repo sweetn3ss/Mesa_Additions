@@ -9,7 +9,7 @@ Params:
 Returns: 
 
 
-Public: yes
+Public: no
 */
 
 // energy is stored in player obj
@@ -19,7 +19,7 @@ Public: yes
 _mmPackEnergy = 100;
 _mmMaxEnergy = 100; 
 
-// moved ur check and data validation outside of the while loop
+// first check data
 private _mmPack = backpack player;
 _mmPackBool = (configFile >> "CfgVehicles" >> _mmPack player >> "isJetpack") call BIS_fnc_cfgGetDataBool;
 
@@ -29,6 +29,9 @@ private _mmPackMax = (configFile >> "cfgVehicles" >> _mmPack >> "maxCharge") cal
 private _mmPackTime = (configFile >> "cfgVehicles" >> _mmPack >> "rechargeTime") call BIS_fnc_cfgGetData;
 private _mmPackRate = (configFile >> "cfgVehicles" >> _mmPack >> "rechargeRate") call BIS_fnc_cfgGetData;
 _mmPackEnergy = _mmPackMax;
+
+player call MM_Bullfrog_fnc_jetpackLoop;
+
 while {alive player;} do {
     
 };
