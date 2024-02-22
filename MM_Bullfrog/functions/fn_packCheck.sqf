@@ -41,4 +41,3 @@ player setVariable ["MM_isWearJet", true];
 player spawn MM_Bullfrog_fnc_rechargeLoop;
 
 
-missionNamespace 

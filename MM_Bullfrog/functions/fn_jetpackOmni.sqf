@@ -13,10 +13,6 @@ _newEnergy  -   altered energy value    <NUMBER>
 
 Public: no
 */
-params ["_currentE","_jumpType"];
-
-private _cost = nil;
-
 
 //_wornBag = backpack _unit;
 //_wornIsOmni = (configFile >> "CfgVehicles" >> _wornBag >> "IsOmni") call BIS_fnc_getCfgDataBool;
