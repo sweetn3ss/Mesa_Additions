@@ -34,7 +34,7 @@ _outfit set [5, _bkp];
 _outfit set [4, _vst];
 _outfit set [3, _uni];
 */
-while (sleep 0.5; alive player;) {
+while {sleep 0.5; alive player;} do {
 	if (pressa da button) then {
 		if (outfit = mmPreBanan && outfit != mmBanan) then {
 			mmPreBanan = getUnitLoadout player;
