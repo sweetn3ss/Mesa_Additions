@@ -30,6 +30,9 @@ class cfgFunctions
 		class MM_Bullfrog {
 			file = "MM_Bullfrog\functions";
 			class customWoundHandler;
+			class hashmapCreate {
+				preInit=1;
+			};
             class jetpackEnergy;
             class jetpackOmni;
             class jetpackOmniShort;
