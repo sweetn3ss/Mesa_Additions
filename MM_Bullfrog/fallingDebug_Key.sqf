@@ -18,8 +18,16 @@ PlzNoFallMommy = false;
 
 [ // jetpack energy recharge amount
 	"MM_Bullfrog_amnt", 
-	"CHECKBOX", 
+	"SLIDER", 
 	["Recharge Amount", "The amount of energy deposited after the interval defined above. Does not require mission restart."], 
+	"Jumpack Framework", 
+	[2, 20, 2, 0]
+] call CBA_fnc_addSetting;
+
+[ // jetpack starting energy
+	"MM_Bullfrog_startE", 
+	"SLIDER", 
+	["Starting Energy", "The amount of energy each jetpack will start with, without needig to charge.. Does not require mission restart."], 
 	"Jumpack Framework", 
 	[2, 20, 2, 0]
 ] call CBA_fnc_addSetting;
