@@ -1,3 +1,4 @@
+if !(isServer) then {
 // ####################################################################################################
 // ###################################### PLAYER VARS #################################################
 // ####################################################################################################
@@ -6,8 +7,10 @@
 player setVariable ["MM_Bullfrog_energy", 0];
 
 // set jetpack verification var to false
-player setVariable ["MM_isWearJet", false];
+player setVariable ["MM_Bullfrog_isWearJet", false];
 
+// set paused regeneration to false
+player setVariable ["MM_Bullfrog_rPaused", false];
 
 // ####################################################################################################
 // ################################## PLAYER EVENT HANDLERS ###########################################
@@ -24,3 +27,4 @@ player addEventHandler ["Respawn", {
 	params ["_unit", "_corpse"];
 	_unit call MM_Bullfrog_fnc_packCheck;
 }];
+};
