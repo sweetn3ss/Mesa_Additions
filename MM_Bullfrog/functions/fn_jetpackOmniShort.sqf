@@ -21,9 +21,19 @@ private _velR = [16,0,20.5];
 private _velL = [-16,0,20.5];
 */
 // f, b, l, r
-private _velDict = [8,-8,-8,8];
-private _upConst = 10;
+private _velDict = [4,-4,-4,4];
+private _upConst = 5;
 private _velFinal = [0,0];
+
+/*
+setting variable implementation.
+
+private _velH = MM_Bullfrog_horizontal_S;
+private _velV = MM_Bullfrog_vertical_S; 
+private _velDict = [_velH,(0-_velH),(0-_velH),_velH]
+
+# _upConst REPLACE WITH _velV
+*/
 
 // can we fucky with array math to get diagonal velocity?
 /*

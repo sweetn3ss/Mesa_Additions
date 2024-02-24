@@ -14,16 +14,21 @@ nothing
 Public: no
 */
 params ["_unit", "_inputArray"];
-/*
-private _velF = [0,16,20.5];
-private _velB = [0,-16,20.5];
-private _velR = [16,0,20.5];
-private _velL = [-16,0,20.5];
-*/
+
 // f, b, l, r
 private _velDict = [16,-16,-16,16];
 private _upConst = 20.5;
 private _velFinal = [0,0];
+
+/*
+setting variable implementation.
+
+private _velH = MM_Bullfrog_horizontal_L;
+private _velV = MM_Bullfrog_vertical_L; 
+private _velDict = [_velH,(0-_velH),(0-_velH),_velH]
+
+# _upConst REPLACE WITH _velV
+*/
 
 // can we fucky with array math to get diagonal velocity?
 /*
@@ -31,6 +36,8 @@ theoretically, all we need to do is take our inputs and run them through a compa
 alter the velocity model.
 first, we check which are > 0, then add the vectors together.
 */
+
+
 
 // make sure da player aint in nuffin
 if !(isNull objectParent _unit) exitWith {};

@@ -1,7 +1,16 @@
 params ["_unit"];
 
+/*
+setting variable implementation.
+
+private _velH = MM_Bullfrog_horizontal_S;
+private _velV = MM_Bullfrog_vertical_S; 
+
+_unit setVelocityModelSpace [0, _velH, _velV];
+*/
+
 // shoot player forwards
-_unit setVelocityModelSpace [0, 8, 10];
+_unit setVelocityModelSpace [0, 4, 5];
 
 // play sounds and visuals
 _unit spawn {

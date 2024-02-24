@@ -1,5 +1,14 @@
 params ["_unit"];
 
+/*
+setting variable implementation.
+
+private _velH = MM_Bullfrog_horizontal_L;
+private _velV = MM_Bullfrog_vertical_L; 
+
+_unit setVelocityModelSpace [0, _velH, _velV];
+*/
+
 // shoot player forwards
 _unit setVelocityModelSpace [0, 16, 20.5];
 
