@@ -45,12 +45,32 @@ Necessary?
 ] call CBA_fnc_addSetting;
 */
 
+// add cost settings for long and short jump
+
+[ // short jump cost
+	"MM_Bullfrog_cost_S", 
+	"SLIDER", 
+	["Short Jump Cost", "The cost of a short jump, deducted from the energy pool. Does not require mission restart."], 
+	"Jumpack Framework", 
+	[2, 128, 25, 0],
+	1
+] call CBA_fnc_addSetting;
+
+[ // long jump cost
+	"MM_Bullfrog_cost_L", 
+	"SLIDER", 
+	["Long Jump Cost", "The cost of a long jump, deducted from the energy pool. Does not require mission restart."], 
+	"Jumpack Framework", 
+	[2, 128, 100, 0],
+	1
+] call CBA_fnc_addSetting;
+
 [ // short jump length
 	"MM_Bullfrog_horizontal_S", 
 	"SLIDER", 
 	["Horizontal Velocity (Short)", "The horizontal velocity in meters per second imparted upon the player when they perform a short jump. Does not require mission restart."], 
 	"Jumpack Framework", 
-	[2, 128, 8, 0],
+	[2, 128, 4, 0],
 	1
 ] call CBA_fnc_addSetting;
 
@@ -59,7 +79,7 @@ Necessary?
 	"SLIDER", 
 	["Vertical Velocity (Short)", "The vertical velocity imparted upon the player when they perform a short jump. Does not require mission restart."], 
 	"Jumpack Framework", 
-	[2, 128, 10, 0],
+	[2, 128, 5, 0],
 	1
 ] call CBA_fnc_addSetting;
 
@@ -89,7 +109,7 @@ if !(isServer) then {
 		"MM_Bullfrog", 	// modName
 		"MM_Bullfrog_shortJump", 	// varName
 		["Short Jump", 	// pretty Name
-		"tooltip"],		// tooltip
+		"Press to jump a short distance when a JumpPack is equipped."],		// tooltip
 		{				// code executed on key down
 			player call MM_Bullfrog_fnc_jumpS;
 		},				
@@ -103,7 +123,7 @@ if !(isServer) then {
 		"MM_Bullfrog", 	// modName
 		"MM_Bullfrog_longJump", 	// varName
 		["Long Jump", 	// pretty Name
-		"tooltip"],		// tooltip
+		"Press to jump a long distance when a JumpPack is equipped."],		// tooltip
 		{				// code executed on key down
 			player call MM_Bullfrog_fnc_jumpL;
 		},				
@@ -116,10 +136,10 @@ if !(isServer) then {
 	[ // pause recharge keybind
 		"MM_Bullfrog", 	// modName
 		"MM_Bullfrog_rPause", 	// varName
-		["Pause/Unpause Jetpack Energy Regeneration", 	// pretty Name
-		"tooltip"],		// tooltip
+		["Toggle Energy Regeneration", 	// pretty Name
+		"Allows the user to pause or unpause JumpPack energy regeneration. Starts unpaused."],		// tooltip
 		{				// code executed on key down
-			player call MM_Bullfrog_fnc_rechargePause;
+			player call MM_Bullfrog_fnc_rechargeToggle;
 		},				
 		{				// code executed on key up
 
