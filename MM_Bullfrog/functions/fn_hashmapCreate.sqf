@@ -2,10 +2,18 @@
 //create preHash
 private _preHash = [];
 
-//get all subclasses into an array
 private _classArray = 	(configFile >> 
 						"cfgVehicles" >> 
-						"OPTRE_S12_SOLA_Jetpack") call BIS_fnc_getCfgSubClasses;
+						"MM_Bullfrog_Base") call BIS_fnc_getCfgSubClasses;
+
+// if OPTRE jumppacks in config
+if (isClass configFile >> "cfgVehicles" >> "OPTRE_S12_SOLA_Jetpack") then {
+	//get all subclasses into an array
+	private _optreArray = 	(configFile >> 
+							"cfgVehicles" >> 
+							"OPTRE_S12_SOLA_Jetpack") call BIS_fnc_getCfgSubClasses;
+	{_classArray append _x} forEach _optreArray;
+};
 
 //iterate over entire array, check if isJetpack, and if so, grab maxEnergy and add to array
 {
