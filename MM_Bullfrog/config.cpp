@@ -6,7 +6,9 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={};
+		requiredAddons[]={ //CBA, OPTRE jumppacks
+
+		};
 		authors[]=
         {
             "Mesa",
@@ -22,22 +24,37 @@ class Extended_PostInit_EventHandlers
 	{
 		init = "call compile preprocessFileLineNumbers 'fallingDebug_Key.sqf'";
 	};
+	class settings {
+		init = "call compile preprocessFileLineNumbers 'settings.sqf'";
+	};
 };
 class cfgFunctions
 {
-	class Project_Airborne_FunctonLibrary_1
+	class Project_Airborne_FunctonLibrary_1 // change irrelevent classes
 	{
+		tag = "MM_Bullfrog";
 		class MM_Bullfrog {
 			file = "MM_Bullfrog\functions";
+			class alterEnergy;
 			class customWoundHandler;
 			class hashmapCreate {
 				preInit=1;
 			};
-            class jetpackEnergy;
             class jetpackOmni;
             class jetpackOmniShort;
             class jetpackVector;
             class jetpackVectorShort;
+			class jumpL;
+			class jumpS;
+			class packCheck;
+			class playerEH {
+				postInit = 1;
+			};
+			class playerVarsInit {
+				postInit = 1;
+			}
+			class rechargeLoop;
+			class rechargePause;
 		};
 	};
 	class Keys {
@@ -66,3 +83,4 @@ class CfgVehicles
 	};
 };
 #include "ACE_Medical_Injuries.hpp"
+#include "RscTitles.hpp"
