@@ -16,6 +16,8 @@ params ["_unit"];
 // get all current inputActions
 private _inputArray = [inputAction "MoveForward",inputAction "MoveBack",inputAction "TurnRight",inputAction "TurnLeft"];
 
+// check if emp'd
+
 // define vars
 private _cost = SJUMP_COST;
 private _currentE = _unit getVariable "MM_Bullfrog_energy";

@@ -10,3 +10,7 @@ player addEventHandler ["Respawn", {
 	_unit call MM_Bullfrog_fnc_playerVarsInit;
 	_unit call MM_Bullfrog_fnc_packCheck;
 }];
+
+// if crows EW loaded,
+if 
+private _empEH = ["crowsEW_emp_eventFireEMP", func] call CBA_fnc_addEventHandler;
