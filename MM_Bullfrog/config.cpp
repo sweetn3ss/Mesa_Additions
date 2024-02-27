@@ -6,8 +6,8 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={ //CBA, OPTRE jumppacks
-
+		requiredAddons[]={
+			"cba_main"
 		};
 		authors[]=
         {
@@ -30,10 +30,10 @@ class Extended_PostInit_EventHandlers
 };
 class cfgFunctions
 {
-	class Project_Airborne_FunctonLibrary_1 // change irrelevent classes
+	class MM_Bullfrog // change irrelevent classes
 	{
 		tag = "MM_Bullfrog";
-		class MM_Bullfrog {
+		class Functions {
 			file = "MM_Bullfrog\functions";
 			class alterEnergy;
 			class customWoundHandler;
@@ -54,7 +54,7 @@ class cfgFunctions
 				postInit = 1;
 			}
 			class rechargeLoop;
-			class rechargePause;
+			class rechargeToggle;
 		};
 	};
 	class Keys {
@@ -75,12 +75,9 @@ class CfgSFX
 		empty[]={"", 0, 0, 0, 0, 0, 0, 0};
 	};
 };
-class CfgVehicles
-{
-	class MM_Bullfrog_Jump_Sound
-	{
-		sound="Project_Airborne_Jump_SoundSFX";
-	};
+class CfgVehicles {
+	#include "CfgVehicles.hpp"
 };
+
 #include "ACE_Medical_Injuries.hpp"
-#include "RscTitles.hpp"
+//#include "RscTitles.hpp"
