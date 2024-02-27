@@ -23,10 +23,9 @@ while {alive _unit && MM_Bullfrog_enabled && (_unit getVariable "MM_Bullfrog_isW
 	// wait recharge time
 	sleep _delay;
 	// if not paused, then
-	if !(_unit getVariable "MM_Bullfrog_rPaused") then {
-		// call to alter energy
-		[_unit, _amount, 0] call MM_Bullfrog_fnc_alterEnergy;
-	};
+	if (_unit getVariable "MM_Bullfrog_rPaused") then {continue;};
+	// call to alter energy
+	[_unit, _amount, 0] call MM_Bullfrog_fnc_alterEnergy;
 };
 
 _unit setVariable ["MM_Bullfrog_energy", 0];

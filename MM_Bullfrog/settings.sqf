@@ -14,7 +14,7 @@
 [ // jetpack energy recharge time
 	"MM_Bullfrog_time", 
 	"SLIDER", 
-	["Recharge Time", "The interval in seconds between energy deposits into the player's pool. Does not require mission restart."], 
+	["Recharge Interval", "The interval in seconds between energy deposits into the player's pool. Does not require mission restart."], 
 	"Jumpack Framework", 
 	[1, 5, 1, 0],
 	1

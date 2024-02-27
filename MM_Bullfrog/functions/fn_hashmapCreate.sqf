@@ -1,4 +1,3 @@
-
 //create preHash
 private _preHash = [];
 
